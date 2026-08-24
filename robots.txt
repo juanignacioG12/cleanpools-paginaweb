@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://cleanpools-paginaweb.vercel.app/sitemap.xml

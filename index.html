@@ -1,0 +1,898 @@
+<!DOCTYPE html>
+
+<html data-theme="light" lang="es">
+<head>
+<meta charset="utf-8"/>
+<meta content="strict-origin-when-cross-origin" name="referrer"/>
+<meta content="nosniff" http-equiv="X-Content-Type-Options"/>
+<meta content="width=device-width,initial-scale=1.0" name="viewport"/>
+<meta content="index, follow" name="robots"/>
+<title>Clean Pools SJ — Mantenimiento Profesional de Piscinas · San Juan</title>
+<meta content="Mantenimiento, limpieza profunda y recuperación de agua de piscinas en San Juan (Capital, Rawson, Rivadavia, Pocito y zonas aledañas). Más de 150 clientes confían en nosotros. Presupuesto sin cargo por WhatsApp." name="description"/>
+<link href="https://cleanpools-paginaweb.vercel.app/" rel="canonical"/>
+<meta content="website" property="og:type"/>
+<meta content="https://cleanpools-paginaweb.vercel.app/" property="og:url"/>
+<meta content="Clean Pools SJ" property="og:site_name"/>
+<meta content="Clean Pools SJ — Mantenimiento Profesional de Piscinas en San Juan" property="og:title"/>
+<meta content="Mantenimiento, limpieza profunda y recuperación de agua de piscinas en San Juan. Más de 150 clientes confían en nosotros. Presupuesto sin cargo por WhatsApp." property="og:description"/>
+<meta content="https://cleanpools-paginaweb.vercel.app/og-image.jpg" property="og:image"/>
+<meta content="1200" property="og:image:width"/>
+<meta content="630" property="og:image:height"/>
+<meta content="es_AR" property="og:locale"/>
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="Clean Pools SJ — Mantenimiento Profesional de Piscinas en San Juan" name="twitter:title"/>
+<meta content="Mantenimiento, limpieza profunda y recuperación de agua de piscinas en San Juan. Presupuesto sin cargo por WhatsApp." name="twitter:description"/>
+<meta content="https://cleanpools-paginaweb.vercel.app/og-image.jpg" name="twitter:image"/>
+<link href="images/favicon-32.png" rel="icon" type="image/png" sizes="32x32"/>
+<link href="images/apple-touch-icon.png" rel="apple-touch-icon"/>
+<link href="images/bg-1-cd4c58801c.webp" rel="preload" as="image" fetchpriority="high"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800;900&amp;family=Playfair+Display:ital,wght@0,700;0,800;1,700&amp;display=swap" rel="stylesheet"/>
+<style>
+[data-theme="dark"]{--bg:#03101C;--surf:#071829;--card:#0B1E30;--card2:#0F2740;--border:rgba(0,175,255,.13);--border2:rgba(0,175,255,.28);--text:#EDF7FF;--text2:#B2CCDF;--muted:#587A92;--glow:rgba(0,119,182,.09);--glow2:rgba(0,180,216,.18);--sh:0 20px 60px rgba(0,0,0,.55);--sh2:0 8px 26px rgba(0,0,0,.38)}
+[data-theme="light"]{--bg:#F0F8FF;--surf:#E2F0FA;--card:#FFFFFF;--card2:#DCF0FC;--border:rgba(0,100,180,.15);--border2:rgba(0,150,210,.3);--text:#03101C;--text2:#1A3A55;--muted:#4A7090;--glow:rgba(0,119,182,.07);--glow2:rgba(0,180,216,.12);--sh:0 12px 40px rgba(0,100,180,.15);--sh2:0 4px 16px rgba(0,100,180,.12)}
+:root{--accent:#0077B6;--sky:#00B4D8;--bright:#90E0EF;--wa:#25D366;--r:18px;--r2:11px}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'Manrope',sans-serif;background:var(--bg);color:var(--text);overflow-x:hidden;-webkit-font-smoothing:antialiased;line-height:1.65;transition:background .4s,color .4s}
+body::after{content:'';position:fixed;inset:0;z-index:0;pointer-events:none;opacity:.22;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.75' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='200' height='200' filter='url(%23n)' opacity='0.04'/%3E%3C/svg%3E")}
+section,nav,footer{position:relative;z-index:1}
+img{max-width:100%;display:block}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+a{text-decoration:none}
+
+/* ══ NAV — ÚNICO MENÚ, SOLO HORIZONTAL ══ */
+nav{
+  position:fixed;top:0;left:0;right:0;z-index:500;height:66px;
+  display:flex;align-items:center;justify-content:space-between;
+  padding:0 4vw;
+  background:rgba(3,16,28,.92);
+  backdrop-filter:blur(24px) saturate(180%);
+  border-bottom:1px solid var(--border);
+  transition:background .3s,box-shadow .3s;
+}
+[data-theme="light"] nav{background:rgba(240,248,255,.95);border-color:rgba(0,100,180,.2)}
+nav.stuck{box-shadow:0 2px 36px rgba(0,0,0,.35)}
+[data-theme="dark"] nav.stuck{background:rgba(3,16,28,.99)}
+[data-theme="light"] nav.stuck{background:rgba(240,248,255,.99)}
+
+.logo{display:flex;align-items:center;flex-shrink:0}
+.logo img{height:40px;width:auto;object-fit:contain}
+
+/* links horizontales */
+.nav-links{display:flex;align-items:center;gap:0;list-style:none}
+.nav-links a{
+  display:block;padding:7px 10px;border-radius:8px;
+  color:var(--text2);font-size:.76rem;font-weight:700;letter-spacing:.01em;
+  position:relative;transition:color .2s;white-space:nowrap;
+}
+.nav-links a::after{
+  content:'';position:absolute;bottom:4px;left:10px;right:10px;height:2px;
+  background:linear-gradient(90deg,var(--accent),var(--sky));border-radius:2px;
+  transform:scaleX(0);transform-origin:left;
+  transition:transform .26s cubic-bezier(.4,0,.2,1);
+}
+.nav-links a:hover{color:var(--text)}
+.nav-links a:hover::after{transform:scaleX(1)}
+.nav-links a.sol{color:var(--sky)}
+
+/* derecha: teléfono + tema */
+.nav-r{display:flex;align-items:center;gap:8px;flex-shrink:0}
+.nav-cart-mobile{display:none;align-items:center;justify-content:center;width:38px;height:38px;border-radius:10px;border:1px solid var(--border2);background:var(--card);font-size:1.05rem;text-decoration:none;flex-shrink:0}
+.nav-phone{
+  display:flex;align-items:center;gap:6px;
+  color:var(--bright);font-size:.82rem;font-weight:800;
+  background:rgba(0,180,216,.1);border:1px solid rgba(0,180,216,.25);
+  padding:7px 13px;border-radius:50px;transition:all .22s;white-space:nowrap;
+}
+[data-theme="light"] .nav-phone{color:var(--accent)}
+.nav-phone:hover{background:rgba(0,180,216,.22);border-color:var(--sky)}
+.theme-btn{
+  width:34px;height:34px;border-radius:50%;border:1px solid var(--border2);
+  background:var(--card);color:var(--text);font-size:.95rem;
+  display:flex;align-items:center;justify-content:center;cursor:pointer;transition:all .25s;flex-shrink:0;
+}
+.theme-btn:hover{border-color:var(--sky)}
+
+/* ══ MENÚ MOBILE — botón hamburguesa + panel propio, sin select nativo ══ */
+.nav-burger{
+  display:none;
+  width:38px;height:38px;border-radius:10px;
+  border:1px solid var(--border2);background:var(--card);
+  flex-direction:column;align-items:center;justify-content:center;gap:4px;
+  cursor:pointer;flex-shrink:0;
+}
+.nav-burger span{width:18px;height:2px;background:var(--text);border-radius:2px;transition:transform .25s,opacity .25s}
+.nav-burger.open span:nth-child(1){transform:translateY(6px) rotate(45deg)}
+.nav-burger.open span:nth-child(2){opacity:0}
+.nav-burger.open span:nth-child(3){transform:translateY(-6px) rotate(-45deg)}
+
+.mobile-panel{
+  display:flex;flex-direction:column;
+  position:fixed;top:66px;left:0;right:0;z-index:499;
+  max-height:0;overflow:hidden;
+  background:var(--bg);
+  border-bottom:1px solid var(--border);
+  transition:max-height .3s ease;
+}
+[data-theme="light"] .mobile-panel{background:#F0F8FF}
+.mobile-panel.open{max-height:600px;overflow-y:auto}
+.mobile-panel a{
+  display:block;padding:16px 6vw;color:var(--text2);font-weight:700;font-size:.95rem;
+  border-bottom:1px solid var(--border);background:var(--bg);
+}
+[data-theme="light"] .mobile-panel a{background:#F0F8FF;color:var(--accent)}
+.mobile-panel a.sol{color:var(--sky)}
+.mobile-panel a:active{background:var(--card)}
+
+/* HERO */
+.hero{min-height:100svh;position:relative;overflow:hidden;display:flex;flex-direction:column;justify-content:flex-end}
+.hero-bg{position:absolute;inset:0;background-image:url('images/bg-1-cd4c58801c.webp');background-size:cover;background-position:center 25%;animation:hZoom 9s ease forwards}
+@keyframes hZoom{from{transform:scale(1.07)}to{transform:scale(1)}}
+.hero-ov{position:absolute;inset:0;background:linear-gradient(175deg,rgba(3,16,28,.18) 0%,rgba(3,16,28,.05) 35%,rgba(3,16,28,.72) 68%,rgba(3,16,28,.97) 100%)}
+.hero-content{position:relative;z-index:4;padding:0 5vw 72px;max-width:680px;animation:fUp .8s .1s ease both}
+@keyframes fUp{from{opacity:0;transform:translateY(26px)}to{opacity:1;transform:translateY(0)}}
+.hero-badge{display:inline-flex;align-items:center;gap:8px;border:1px solid rgba(0,180,216,.35);background:rgba(0,119,182,.12);color:var(--bright);font-size:.7rem;font-weight:800;letter-spacing:.1em;text-transform:uppercase;padding:5px 13px;border-radius:50px;margin-bottom:18px}
+.hero-badge .dot{width:5px;height:5px;border-radius:50%;background:var(--sky);animation:blink 2s infinite}
+@keyframes blink{0%,100%{opacity:1}50%{opacity:.2}}
+.hero h1{font-family:'Playfair Display',serif;font-size:clamp(2.2rem,5.5vw,4.4rem);font-weight:800;line-height:1.08;letter-spacing:-.025em;margin-bottom:14px;text-shadow:0 4px 22px rgba(0,0,0,.6);color:#FFFFFF!important}
+.hero h1 em{color:transparent!important;background:linear-gradient(90deg,var(--sky),var(--bright));-webkit-background-clip:text;background-clip:text;font-style:normal}
+.hero-desc{color:rgba(237,247,255,.82);font-size:clamp(.86rem,1.6vw,1.02rem);max-width:480px;line-height:1.78;margin-bottom:28px;text-shadow:0 2px 10px rgba(0,0,0,.5)}
+.hero-actions{display:flex;flex-wrap:wrap;gap:11px;margin-bottom:36px}
+.btn-wa{display:inline-flex;align-items:center;gap:9px;background:var(--wa);color:#fff;font-weight:800;font-size:.88rem;padding:13px 26px;border-radius:50px;box-shadow:0 0 28px rgba(37,211,102,.38);transition:all .25s}
+.btn-wa:hover{transform:translateY(-2px);box-shadow:0 0 46px rgba(37,211,102,.6)}
+.btn-ghost{display:inline-flex;align-items:center;gap:7px;background:rgba(255,255,255,.1);color:#fff;font-weight:700;font-size:.88rem;padding:13px 24px;border-radius:50px;border:1.5px solid rgba(255,255,255,.3);backdrop-filter:blur(8px);transition:all .25s}
+.btn-ghost:hover{border-color:var(--sky);color:var(--sky)}
+.hero-trust{display:flex;align-items:center;gap:13px;flex-wrap:wrap}
+.avstack{display:flex}
+.av{width:30px;height:30px;border-radius:50%;border:2.5px solid rgba(3,16,28,.8);background:linear-gradient(135deg,var(--accent),var(--sky));display:flex;align-items:center;justify-content:center;font-size:.65rem;font-weight:900;color:#fff;flex-shrink:0;margin-left:-8px}
+.av:first-child{margin-left:0}
+.trust-txt{font-size:.78rem;color:rgba(237,247,255,.7)}
+.trust-txt strong{color:#fff}
+.scroll-hint{position:absolute;bottom:20px;left:50%;transform:translateX(-50%);z-index:4;display:flex;flex-direction:column;align-items:center;gap:5px;color:rgba(237,247,255,.3);font-size:.66rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase}
+.scroll-line{width:1px;height:40px;background:linear-gradient(to bottom,transparent,rgba(0,180,216,.5))}
+
+/* STATS */
+.stats-strip{background:var(--card);border-top:1px solid var(--border);border-bottom:1px solid var(--border)}
+.stats-inner{display:flex;max-width:1200px;margin:0 auto;overflow-x:auto;scrollbar-width:none}
+.stats-inner::-webkit-scrollbar{display:none}
+.stat-block{flex:1;min-width:140px;padding:24px 16px;text-align:center;border-right:1px solid var(--border)}
+.stat-block:last-child{border-right:none}
+.stat-n{font-family:'Playfair Display',serif;font-size:1.8rem;font-weight:800;color:var(--sky);line-height:1;margin-bottom:4px}
+.stat-l{font-size:.7rem;font-weight:700;color:var(--muted);letter-spacing:.05em;text-transform:uppercase}
+
+/* SHARED */
+.section{padding:88px 5vw}
+.section.dark{background:var(--surf)}
+.max{max-width:1200px;margin:0 auto}
+.kicker{display:inline-flex;align-items:center;gap:9px;color:var(--sky);font-size:.7rem;font-weight:800;letter-spacing:.14em;text-transform:uppercase;margin-bottom:13px}
+.kicker::before{content:'';display:block;width:18px;height:2px;background:linear-gradient(90deg,var(--accent),var(--sky));border-radius:2px}
+.section-title{font-family:'Playfair Display',serif;font-size:clamp(1.75rem,3.5vw,2.8rem);font-weight:800;line-height:1.15;letter-spacing:-.022em;margin-bottom:13px;color:var(--text)}
+.section-sub{color:var(--muted);font-size:.93rem;max-width:520px;line-height:1.78}
+
+/* ABOUT */
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:68px;align-items:center;margin-top:52px}
+.about-wrap{position:relative;padding-bottom:38px}
+.about-main{width:100%;border-radius:var(--r);overflow:hidden;aspect-ratio:4/3;box-shadow:var(--sh);border:1px solid var(--border)}
+.about-main img{width:100%;height:100%;object-fit:cover;transition:transform .6s}
+.about-main:hover img{transform:scale(1.04)}
+.about-float{position:absolute;bottom:0;right:-18px;width:52%;border-radius:var(--r);overflow:hidden;border:3px solid var(--bg);box-shadow:var(--sh2)}
+.about-float img{width:100%;height:100%;object-fit:cover;aspect-ratio:4/3}
+.about-text p{color:var(--text2);font-size:.93rem;line-height:1.82;margin-bottom:20px}
+.values-grid{display:grid;grid-template-columns:1fr 1fr;gap:11px;margin-top:8px}
+.val{background:var(--card);border:1px solid var(--border);border-radius:var(--r2);padding:17px 15px;transition:border-color .25s,transform .25s}
+.val:hover{border-color:var(--sky);transform:translateY(-3px)}
+.val-icon{font-size:1.1rem;margin-bottom:6px}
+.val h4{font-size:.84rem;font-weight:800;margin-bottom:3px;color:var(--text)}
+.val p{font-size:.76rem;color:var(--muted);line-height:1.55}
+
+/* SERVICES */
+.services-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:20px;margin-top:44px}
+.svc{background:var(--card);border:1px solid var(--border);border-radius:var(--r);padding:24px 20px;position:relative;overflow:hidden;transition:border-color .3s,transform .3s,box-shadow .3s}
+.svc::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,var(--accent),var(--sky));opacity:0;transition:opacity .3s}
+.svc:hover{border-color:var(--sky);transform:translateY(-4px);box-shadow:var(--sh2)}
+.svc:hover::before{opacity:1}
+.svc-icon{width:46px;height:46px;border-radius:12px;background:var(--glow2);border:1px solid var(--border2);display:flex;align-items:center;justify-content:center;font-size:1.25rem;margin-bottom:14px}
+.svc h3{font-size:.95rem;font-weight:800;margin-bottom:8px;color:var(--text)}
+.svc p{font-size:.8rem;color:var(--muted);line-height:1.6;margin-bottom:14px}
+.svc-list{list-style:none;margin-bottom:18px}
+.svc-list li{font-size:.76rem;color:var(--text2);padding:3px 0;display:flex;align-items:center;gap:7px}
+.svc-list li::before{content:'✓';color:var(--sky);font-weight:900;flex-shrink:0}
+.svc-badge{display:inline-block;background:var(--glow2);border:1px solid var(--border2);color:var(--sky);font-size:.68rem;font-weight:800;padding:4px 10px;border-radius:50px;margin-bottom:10px;letter-spacing:.2px}
+.svc-visit{margin-bottom:14px;padding-left:12px;border-left:2px solid var(--border2)}
+.svc-visit-tag{display:block;font-size:.72rem;font-weight:800;color:var(--accent);text-transform:uppercase;letter-spacing:.4px;margin-bottom:6px}
+[data-theme="dark"] .svc-visit-tag{color:var(--sky)}
+.svc-visit .svc-list{margin-bottom:0}
+.svc-result{background:var(--glow2);border:1px solid var(--border2);border-radius:var(--r2);padding:9px 12px;font-size:.78rem;font-weight:700;color:var(--text2);margin-bottom:16px}
+.btn-consult{display:inline-flex;align-items:center;gap:5px;background:var(--glow);border:1px solid var(--border2);color:var(--sky);font-size:.77rem;font-weight:800;padding:7px 14px;border-radius:50px;transition:all .22s}
+.btn-consult:hover{background:var(--sky);color:var(--bg)}
+
+/* DEEP */
+.deep-intro{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:start;margin-top:52px}
+.deep-text p{color:var(--text2);font-size:.93rem;line-height:1.8;margin-bottom:20px}
+.tl-result{display:flex;align-items:center;gap:9px;background:rgba(0,180,216,.08);border:1px solid var(--border2);border-radius:var(--r2);padding:11px 15px;margin-bottom:20px;font-size:.83rem;font-weight:700;color:var(--sky)}
+.timeline{display:flex;flex-direction:column;gap:0;margin-bottom:24px}
+.tl-step{display:flex;align-items:flex-start;gap:14px;padding:12px 0;border-bottom:1px solid var(--border)}
+.tl-num{width:32px;height:32px;border-radius:50%;flex-shrink:0;background:linear-gradient(135deg,var(--accent),var(--sky));display:flex;align-items:center;justify-content:center;font-size:.74rem;font-weight:900;color:#fff}
+.tl-body h5{font-size:.84rem;font-weight:800;margin-bottom:2px;color:var(--text)}
+.tl-body p{font-size:.76rem;color:var(--muted);line-height:1.5}
+.deep-hero-img{border-radius:var(--r);overflow:hidden;aspect-ratio:3/4;box-shadow:var(--sh);border:1px solid var(--border);position:sticky;top:84px}
+.deep-hero-img img{width:100%;height:100%;object-fit:cover}
+.deep-gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:11px;margin-top:32px}
+.dgal{border-radius:var(--r2);overflow:hidden;aspect-ratio:4/3;border:1px solid var(--border);position:relative;cursor:pointer}
+.dgal img{width:100%;height:100%;object-fit:cover;transition:transform .4s}
+.dgal:hover img{transform:scale(1.06)}
+.dtag{position:absolute;top:8px;left:8px;background:linear-gradient(90deg,var(--accent),var(--sky));color:#fff;font-size:.66rem;font-weight:900;padding:3px 8px;border-radius:50px}
+
+/* FILTER */
+.filter-intro{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:start;margin-top:52px}
+.filter-text p{color:var(--text2);font-size:.93rem;line-height:1.8;margin-bottom:16px}
+.ff-list{display:flex;flex-direction:column;gap:9px;margin-bottom:24px}
+.ff{display:flex;align-items:flex-start;gap:11px;background:var(--card);border:1px solid var(--border);border-radius:var(--r2);padding:13px 14px;transition:border-color .25s}
+.ff:hover{border-color:var(--sky)}
+.ff-ico{width:34px;height:34px;border-radius:9px;flex-shrink:0;background:var(--glow2);border:1px solid var(--border2);display:flex;align-items:center;justify-content:center;font-size:.95rem}
+.ff h5{font-size:.82rem;font-weight:800;margin-bottom:2px;color:var(--text)}
+.ff p{font-size:.75rem;color:var(--muted);line-height:1.5}
+.filter-imgs{display:grid;grid-template-columns:1fr 1fr;gap:11px}
+.fi-main{grid-column:span 2;border-radius:var(--r);overflow:hidden;border:1px solid var(--border);box-shadow:var(--sh2);aspect-ratio:16/9;cursor:pointer}
+.fi-main img{width:100%;height:100%;object-fit:cover;transition:transform .5s}
+.fi-main:hover img{transform:scale(1.04)}
+.fi-sm{border-radius:var(--r2);overflow:hidden;border:1px solid var(--border);aspect-ratio:4/3;cursor:pointer}
+.fi-sm img{width:100%;height:100%;object-fit:cover;transition:transform .4s}
+.fi-sm:hover img{transform:scale(1.06)}
+
+/* GALLERY */
+.gal-grid{display:grid;grid-template-columns:repeat(3,1fr);grid-auto-rows:210px;gap:11px;margin-top:44px}
+.gi{border-radius:var(--r2);overflow:hidden;position:relative;border:1px solid var(--border);cursor:pointer;transition:transform .3s,box-shadow .3s}
+.gi:hover{transform:scale(1.02);box-shadow:var(--sh)}
+.gi.tall{grid-row:span 2}
+.gi.wide{grid-column:span 2}
+.gi img{width:100%;height:100%;object-fit:cover;transition:transform .5s}
+.gi:hover img{transform:scale(1.07)}
+.gi-ov{position:absolute;inset:0;background:linear-gradient(to top,rgba(3,16,28,.8) 0%,transparent 55%);opacity:0;transition:opacity .3s;display:flex;align-items:flex-end;padding:13px}
+.gi:hover .gi-ov{opacity:1}
+.gi-label{font-size:.76rem;font-weight:700;color:#fff}
+.lb{display:none;position:fixed;inset:0;z-index:900;background:rgba(3,16,28,.96);backdrop-filter:blur(12px);align-items:center;justify-content:center;padding:18px}
+.lb.open{display:flex}
+.lb img{max-width:92vw;max-height:90vh;border-radius:var(--r);box-shadow:var(--sh);object-fit:contain}
+.lb-x{position:absolute;top:16px;right:20px;background:var(--card);border:1px solid var(--border2);color:var(--text);width:40px;height:40px;border-radius:50%;font-size:1rem;display:flex;align-items:center;justify-content:center;cursor:pointer;transition:all .2s}
+.lb-x:hover{background:var(--sky);color:var(--bg)}
+
+/* TESTIMONIALS */
+.testi-note{display:flex;align-items:center;gap:13px;background:var(--glow);border:1px solid var(--border2);border-radius:var(--r2);padding:14px 20px;margin-top:44px;margin-bottom:24px;font-size:.81rem;color:var(--text2)}
+.testi-note a{color:var(--sky);font-weight:700}
+.g-badge{display:inline-flex;align-items:center;gap:7px;background:#fff;border-radius:7px;padding:4px 11px;flex-shrink:0}
+.g-badge .gs{color:#F4B400;letter-spacing:1px;font-size:.88rem}
+.g-badge span{color:#222;font-weight:800;font-size:.76rem}
+.testi-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}
+.tc{background:var(--card);border:1px solid var(--border);border-radius:var(--r);padding:24px 20px;transition:border-color .3s,transform .3s}
+.tc:hover{border-color:var(--sky);transform:translateY(-4px)}
+.tc-top{display:flex;align-items:center;justify-content:space-between;margin-bottom:10px}
+.tc-stars{color:#F4B400;font-size:.9rem;letter-spacing:1px}
+.tc blockquote{font-size:.85rem;color:var(--text2);line-height:1.7;font-style:italic;margin-bottom:18px;border-left:2px solid var(--sky);padding-left:12px}
+.tc-author{display:flex;align-items:center;gap:10px}
+.tc-av{width:38px;height:38px;border-radius:50%;flex-shrink:0;background:linear-gradient(135deg,var(--accent),var(--sky));display:flex;align-items:center;justify-content:center;font-weight:900;font-size:.78rem;color:#fff}
+.tc-name{font-size:.84rem;font-weight:800;color:var(--text)}
+.tc-zone{font-size:.72rem;color:var(--muted);margin-top:2px}
+
+/* SOL BANNER */
+.sol-banner{background:linear-gradient(135deg,var(--card2) 0%,var(--card) 100%);border:1px solid var(--border2);border-radius:var(--r);padding:48px 40px;margin-top:52px;display:grid;grid-template-columns:1fr auto;gap:40px;align-items:center;position:relative;overflow:hidden}
+.sol-banner::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 60% 80% at 90% 50%,rgba(0,119,182,.12),transparent 70%)}
+.sol-banner-text{position:relative;z-index:1}
+.sol-banner-text h3{font-family:'Playfair Display',serif;font-size:clamp(1.4rem,2.5vw,2rem);font-weight:800;margin-bottom:10px;color:var(--text)}
+.sol-banner-text p{color:var(--text2);font-size:.9rem;line-height:1.7;max-width:480px;margin-bottom:22px}
+.sol-gotin{position:relative;z-index:1;width:min(160px,22vw);height:auto;flex-shrink:0;filter:drop-shadow(0 8px 20px rgba(0,119,182,.35));animation:gFloat 5s ease-in-out infinite}
+@keyframes gFloat{0%,100%{transform:translateY(0)}50%{transform:translateY(-12px)}}
+.btn-accent{display:inline-flex;align-items:center;gap:8px;background:linear-gradient(90deg,var(--accent),var(--sky));color:#fff;font-weight:800;font-size:.88rem;padding:13px 24px;border-radius:50px;transition:all .25s;box-shadow:0 0 24px rgba(0,119,182,.3)}
+.btn-accent:hover{transform:translateY(-2px)}
+
+/* ZONES */
+.zones-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:48px}
+.zone{background:var(--card);border:1px solid var(--border);border-radius:var(--r);padding:24px 16px;text-align:center;transition:all .25s;display:flex;flex-direction:column;align-items:center;gap:10px}
+.zone:hover{border-color:var(--sky);transform:translateY(-3px);box-shadow:var(--sh2)}
+.zone-logo{width:56px;height:56px;border-radius:12px;background:var(--card2);border:1px solid var(--border);display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.zone h4{font-size:.88rem;font-weight:800;color:var(--text)}
+.zone p{font-size:.74rem;color:var(--muted);line-height:1.5}
+
+/* FAQ */
+.faq-list{margin-top:44px;max-width:760px}
+.faq-item{border:1px solid var(--border);border-radius:var(--r2);margin-bottom:8px;overflow:hidden;transition:border-color .25s}
+.faq-item.open{border-color:var(--sky)}
+.faq-q{width:100%;background:var(--card);border:none;color:var(--text);font-family:'Manrope',sans-serif;font-size:.9rem;font-weight:700;padding:17px 19px;text-align:left;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:13px;transition:background .2s}
+.faq-q:hover{background:var(--card2)}
+.faq-arr{width:24px;height:24px;border-radius:50%;border:1px solid var(--border2);background:var(--glow);flex-shrink:0;display:flex;align-items:center;justify-content:center;color:var(--sky);font-size:.8rem;transition:transform .3s,background .2s}
+.faq-item.open .faq-arr{transform:rotate(180deg);background:var(--sky);color:var(--bg)}
+.faq-a{max-height:0;overflow:hidden;transition:max-height .38s cubic-bezier(.4,0,.2,1),padding .25s;background:var(--card);color:var(--muted);font-size:.83rem;line-height:1.72;padding:0 19px}
+.faq-item.open .faq-a{max-height:400px;padding:4px 19px 18px}
+.faq-a ul{padding-left:15px;margin-top:7px}
+.faq-a ul li{margin-bottom:3px}
+
+/* CONTACT */
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:56px;margin-top:52px}
+.ci{display:flex;align-items:flex-start;gap:12px;margin-bottom:18px}
+.ci-icon{width:40px;height:40px;border-radius:10px;flex-shrink:0;background:var(--glow2);border:1px solid var(--border2);display:flex;align-items:center;justify-content:center;font-size:1rem}
+.ci-label{font-size:.68rem;color:var(--muted);font-weight:700;letter-spacing:.05em;text-transform:uppercase;margin-bottom:3px}
+.ci a{color:var(--text);font-weight:700;font-size:.9rem;transition:color .2s}
+.ci a:hover{color:var(--sky)}
+.cf{display:flex;flex-direction:column;gap:10px}
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.fi{background:var(--card);border:1.5px solid var(--border);border-radius:var(--r2);color:var(--text);font-family:'Manrope',sans-serif;font-size:.86rem;font-weight:500;padding:12px 14px;outline:none;transition:border-color .2s;width:100%}
+.fi:focus{border-color:var(--sky)}
+.fi::placeholder{color:var(--muted)}
+textarea.fi{min-height:100px;resize:vertical}
+.btn-form{background:linear-gradient(90deg,var(--accent),var(--sky));color:#fff;font-family:'Manrope',sans-serif;font-weight:900;font-size:.88rem;padding:14px;border-radius:var(--r2);border:none;cursor:pointer;transition:all .25s}
+.btn-form:hover{opacity:.9;transform:translateY(-1px)}
+
+/* CTA BAND */
+.cta-band{position:relative;overflow:hidden;padding:80px 5vw;text-align:center}
+.cta-band-bg{position:absolute;inset:0;background-image:url('images/bg-2-6b53ff5ebe.webp');background-size:cover;background-position:center;filter:brightness(.32) saturate(1.2)}
+.cta-band-ov{position:absolute;inset:0;background:linear-gradient(135deg,rgba(0,119,182,.78),rgba(0,180,216,.62))}
+.cta-band-content{position:relative;z-index:2}
+.cta-gotin{width:90px;height:auto;margin:0 auto 18px;display:block;filter:drop-shadow(0 6px 20px rgba(0,0,0,.28));animation:gFloat 4s ease-in-out infinite}
+.cta-band h2{font-family:'Playfair Display',serif;font-size:clamp(1.6rem,3.2vw,2.5rem);font-weight:800;color:#fff;margin-bottom:10px}
+.cta-band p{color:rgba(255,255,255,.84);font-size:.93rem;margin-bottom:24px;max-width:440px;margin-left:auto;margin-right:auto}
+.btn-wa-inv{display:inline-flex;align-items:center;gap:9px;background:#fff;color:var(--accent);font-weight:900;font-size:.9rem;padding:14px 30px;border-radius:50px;box-shadow:0 8px 28px rgba(0,0,0,.18);transition:all .25s}
+.btn-wa-inv:hover{transform:translateY(-2px)}
+
+/* FOOTER */
+footer{background:var(--surf);border-top:1px solid var(--border);padding:44px 5vw 26px}
+.foot-inner{max-width:1200px;margin:0 auto;display:block;gap:36px;padding-bottom:26px;border-bottom:1px solid var(--border)}
+.foot-logo{height:34px;width:auto;object-fit:contain;margin-bottom:12px;display:block}
+.foot-desc{color:var(--muted);font-size:.8rem;line-height:1.7;max-width:300px;margin-bottom:16px}
+.foot-soc{display:flex;gap:8px}
+.fsoc{width:34px;height:34px;border-radius:9px;background:var(--card);border:1px solid var(--border);display:flex;align-items:center;justify-content:center;color:var(--text2);font-size:.9rem;transition:all .22s}
+.fsoc:hover{border-color:var(--sky);color:var(--sky);transform:translateY(-2px)}
+.foot-bottom{max-width:1200px;margin:20px auto 0;display:flex;justify-content:space-between;flex-wrap:wrap;gap:7px}
+.foot-bottom p{font-size:.74rem;color:var(--muted)}
+
+/* CHAT WIDGET */
+.chat-widget{position:fixed;bottom:24px;right:24px;z-index:600;display:flex;flex-direction:column;align-items:flex-end;gap:8px}
+.chat-mascot{position:relative;z-index:2;align-self:flex-end}
+.chat-gotin{display:block;width:64px;height:auto;filter:drop-shadow(0 4px 12px rgba(0,0,0,.3));animation:gFloat 4s ease-in-out infinite}
+.chat-bubble{position:absolute;bottom:100%;right:-6px;margin-bottom:16px;z-index:10;background:var(--card);border:1px solid var(--border2);border-radius:16px 16px 4px 16px;padding:13px 17px;box-shadow:var(--sh2);font-family:'Manrope',sans-serif;font-size:.82rem;font-weight:600;color:var(--text);width:max-content;max-width:220px;text-align:right;line-height:1.5;opacity:0;pointer-events:none;transform:scale(.85) translateY(8px);transform-origin:bottom right;transition:opacity .35s,transform .35s cubic-bezier(.34,1.56,.64,1)}
+.chat-bubble::after{content:'';position:absolute;bottom:-7px;right:24px;width:14px;height:14px;background:var(--card);border-right:1px solid var(--border2);border-bottom:1px solid var(--border2);transform:rotate(45deg);z-index:-1}
+.chat-bubble.show{opacity:1;pointer-events:auto;transform:scale(1) translateY(0)}
+.chat-bubble strong{color:var(--sky);display:block;margin-bottom:3px}
+.chat-btn{display:flex;align-items:stretch;border-radius:50px;overflow:visible;cursor:pointer;text-decoration:none;filter:drop-shadow(0 4px 18px rgba(37,211,102,.45));animation:wPop 3s ease-in-out infinite;transition:transform .25s,filter .25s;position:relative;z-index:1}
+.chat-btn:hover{transform:scale(1.05);filter:drop-shadow(0 6px 28px rgba(37,211,102,.65))}
+.chat-main{display:flex;align-items:center;gap:10px;background:var(--wa);color:#fff;padding:14px 20px;border-radius:50px;font-family:'Manrope',sans-serif;white-space:nowrap}
+.chat-txt{display:flex;flex-direction:column;line-height:1.25}
+.chat-label{font-size:.7rem;opacity:.88;font-weight:600}
+.chat-cta{font-size:.86rem;font-weight:900}
+@keyframes wPop{0%,100%{filter:drop-shadow(0 4px 18px rgba(37,211,102,.45))}50%{filter:drop-shadow(0 4px 36px rgba(37,211,102,.7))}}
+@media(max-width:480px){.chat-txt{display:none}.chat-main{padding:15px;border-radius:50%}.chat-gotin{width:48px}.chat-bubble{max-width:180px;margin-bottom:12px}}
+
+/* REVEAL */
+.reveal{opacity:0;transform:translateY(26px);transition:opacity .6s ease,transform .6s ease}
+.reveal.vis{opacity:1;transform:translateY(0)}
+
+/* ══ RESPONSIVE ══ */
+@media(max-width:960px){
+  /* ocultar links de texto, mostrar botón hamburguesa */
+  .nav-links{display:none}
+  .nav-burger{display:flex}
+  .nav-cart-mobile{display:flex}
+  /* ocultar teléfono en mobile para ahorrar espacio */
+  .nav-phone{display:none}
+  .theme-btn{display:none}
+
+  .about-grid,.deep-intro,.filter-intro,.contact-grid{grid-template-columns:1fr;gap:32px}
+  .about-float{display:none}
+  .services-grid{grid-template-columns:1fr 1fr}
+  .deep-gallery{grid-template-columns:1fr 1fr}
+  .gal-grid{grid-template-columns:1fr 1fr;grid-auto-rows:175px}
+  .testi-grid{grid-template-columns:1fr}
+  .zones-grid{grid-template-columns:1fr 1fr}
+  .sol-banner{grid-template-columns:1fr}
+  .sol-gotin{width:120px;margin:0 auto}
+  .deep-hero-img{position:relative;top:0;aspect-ratio:16/9}
+  .filter-imgs{grid-template-columns:1fr}
+  .fi-main{grid-column:span 1}
+}
+@media(max-width:600px){
+  .section-title{font-size:1.55rem;letter-spacing:-.01em}
+  .services-grid,.deep-gallery{grid-template-columns:1fr}
+  .gal-grid{grid-template-columns:1fr;grid-auto-rows:230px}
+  .gi.wide{grid-column:span 1}
+  .values-grid,.form-row{grid-template-columns:1fr}
+  .zones-grid{grid-template-columns:1fr 1fr}
+  .hero-actions{flex-direction:column}
+  .btn-wa,.btn-ghost{justify-content:center}
+}
+</style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HomeAndConstructionBusiness",
+  "name": "Clean Pools SJ",
+  "image": "https://cleanpools-paginaweb.vercel.app/og-image.jpg",
+  "url": "https://cleanpools-paginaweb.vercel.app/",
+  "telephone": "+5492645494145",
+  "priceRange": "$$",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "San Juan",
+    "addressRegion": "San Juan",
+    "addressCountry": "AR"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": -31.5375,
+    "longitude": -68.5364
+  },
+  "areaServed": ["San Juan Capital", "Rawson", "Rivadavia", "Pocito", "Chimbas", "Santa Lucía", "Zonda"],
+  "sameAs": [
+    "https://www.instagram.com/cleanpoolssj",
+    "https://maps.app.goo.gl/wr1vRoCGGcXhoQVaA"
+  ],
+  "openingHoursSpecification": {
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+    "opens": "08:00",
+    "closes": "18:00"
+  },
+  "makesOffer": [
+    {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Mantenimiento de Piscinas"}},
+    {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Limpieza Profunda de Piscinas"}},
+    {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Recuperación de Agua"}},
+    {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Filtros y Equipos"}}
+  ]
+}
+</script>
+</head>
+<body>
+<!-- ══ NAV — ÚNICO MENÚ HORIZONTAL ══ -->
+<nav id="nav">
+<a class="logo" href="#"><img alt="Clean Pools SJ" decoding="async" fetchpriority="high" height="192" src="images/logo.webp" width="200"/></a>
+<!-- Links horizontales desktop -->
+<ul class="nav-links">
+<li><a href="#nosotros">Nosotros</a></li>
+<li><a href="#servicios">Servicios</a></li>
+<li><a href="#limpiezas">Limpiezas</a></li>
+<li><a href="#filtros">Filtros</a></li>
+<li><a href="tienda.html">🛒 Tienda</a></li>
+<li><a href="#galeria">Galería</a></li>
+<li><a href="#cobertura">Cobertura</a></li>
+<li><a href="#faq">FAQ</a></li>
+<li><a class="sol" href="soluciones.html">Soluciones ✦</a></li>
+<li><a href="#contacto">Contacto</a></li>
+</ul>
+<div class="nav-r">
+<a class="nav-phone" href="tel:+5492645494145">
+<svg fill="none" height="13" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" viewbox="0 0 24 24" width="13"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 8.81 19.79 19.79 0 01.01 2.18 2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 7.91a16 16 0 006.18 6.18l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"></path></svg>
+      264-549-4145
+    </a>
+<button class="theme-btn" id="themeBtn" onclick="toggleTheme()">🌙</button>
+<a aria-label="Ir a la tienda" class="nav-cart-mobile" href="tienda.html">🛒</a>
+<button aria-expanded="false" aria-label="Abrir menú" class="nav-burger" id="navBurger" onclick="toggleMobileMenu()">
+<span></span><span></span><span></span>
+</button>
+</div>
+</nav>
+<!-- Panel mobile propio — un solo bloque, mismo ancho que la pantalla, con fondo sólido -->
+<div class="mobile-panel" id="mobilePanel">
+<a href="#nosotros" onclick="closeMobileMenu()">Nosotros</a>
+<a href="#servicios" onclick="closeMobileMenu()">Servicios</a>
+<a href="#limpiezas" onclick="closeMobileMenu()">Limpiezas</a>
+<a href="#filtros" onclick="closeMobileMenu()">Filtros</a>
+<a href="tienda.html">🛒 Tienda</a>
+<a href="#galeria" onclick="closeMobileMenu()">Galería</a>
+<a href="#cobertura" onclick="closeMobileMenu()">Cobertura</a>
+<a href="#faq" onclick="closeMobileMenu()">FAQ</a>
+<a class="sol" href="soluciones.html">Soluciones ✦</a>
+<a href="#contacto" onclick="closeMobileMenu()">Contacto</a>
+</div>
+<!-- NO HAY DRAWER LATERAL, NO HAY SELECT NATIVO, NO HAY PANEL TRANSPARENTE -->
+<!-- HERO -->
+<section class="hero">
+<div class="hero-bg"></div>
+<div class="hero-ov"></div>
+<div class="hero-content">
+<div class="hero-badge"><span class="dot"></span> San Juan, Argentina · Servicio Profesional</div>
+<h1>Tu piscina,<br/>siempre <em>cristalina</em></h1>
+<p class="hero-desc">Mantenimiento semanal, limpiezas profundas y cuidado del agua. Más de 150 clientes confían en nosotros cada temporada en San Juan.</p>
+<div class="hero-actions">
+<a class="btn-wa" href="https://wa.me/5492645494145?text=Hola%2C+quiero+consultar+por+el+servicio" rel="noopener noreferrer" target="_blank"><svg fill="currentColor" height="20" viewbox="0 0 24 24" width="20"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"></path></svg> Consultá gratis</a>
+<a class="btn-ghost" href="#servicios">Ver servicios →</a>
+</div>
+<div class="hero-trust">
+<div class="avstack"><div class="av">CR</div><div class="av">EH</div><div class="av">LV</div><div class="av">WM</div><div class="av">+</div></div>
+<div class="trust-txt"><strong>+150 familias</strong> confían en Clean Pools SJ</div>
+</div>
+</div>
+<div class="scroll-hint"><div class="scroll-line"></div><span>Scroll</span></div>
+</section>
+<!-- STATS -->
+<div class="stats-strip reveal">
+<div class="stats-inner">
+<div class="stat-block"><div class="stat-n">+150</div><div class="stat-l">Clientes activos</div></div>
+<div class="stat-block"><div class="stat-n">+5</div><div class="stat-l">Años de experiencia</div></div>
+<div class="stat-block"><div class="stat-n">8</div><div class="stat-l">Zonas cubiertas</div></div>
+<div class="stat-block"><div class="stat-n">4.9★</div><div class="stat-l">Google Maps</div></div>
+<div class="stat-block"><div class="stat-n">100%</div><div class="stat-l">Compromiso</div></div>
+</div>
+</div>
+<!-- ABOUT -->
+<section class="section dark" id="nosotros">
+<div class="max">
+<div class="kicker reveal">Sobre nosotros</div>
+<h2 class="section-title reveal">Profesionales del agua,<br/>no solo limpiadores</h2>
+<p class="section-sub reveal">Más de 5 años brindando servicio real, constante y de calidad en San Juan. Equipos profesionales, protocolo claro y comunicación directa siempre.</p>
+<div class="about-grid">
+<div class="about-wrap reveal">
+<div class="about-main"><img alt="Piscina Clean Pools SJ" decoding="async" height="1100" loading="lazy" src="images/piscina-clean-pools-sj-6b53ff5ebe.webp" width="825"/></div>
+<div class="about-float"><img alt="Mantenimiento piscina" decoding="async" height="1100" loading="lazy" src="images/mantenimiento-piscina-61b1f33af4.webp" width="825"/></div>
+</div>
+<div class="about-text reveal">
+<p>Clean Pools SJ nació con una premisa simple: que cada familia de San Juan pueda disfrutar su pileta limpia, segura y en perfectas condiciones, sin el estrés del mantenimiento.</p>
+<p>Cada visita incluye control químico completo, limpieza exhaustiva e informe del estado del agua directamente por WhatsApp. Trabajamos con honestidad y resultados visibles en cada servicio.</p>
+<div class="values-grid">
+<div class="val reveal"><div class="val-icon">⚡</div><h4>Puntualidad</h4><p>Siempre llegamos en el momento acordado y, si surge algún imprevisto, avisamos con anticipación.</p></div>
+<div class="val reveal"><div class="val-icon">🔬</div><h4>Control Químico</h4><p>Medición precisa del pH, cloro y alcalinidad en cada visita.</p></div>
+<div class="val reveal"><div class="val-icon">🛡️</div><h4>Confianza</h4><p>Más de 150 clientes avalan nuestro trabajo temporada tras temporada.</p></div>
+<div class="val reveal"><div class="val-icon">📱</div><h4>Comunicación</h4><p>Respondemos rápido por WhatsApp y enviamos fotos del estado del agua.</p></div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SERVICES — 5 cards sin Aspirado, Apertura corregida -->
+<section class="section" id="servicios">
+<div class="max">
+<div class="kicker reveal">Nuestros servicios</div>
+<h2 class="section-title reveal">Soluciones profesionales para tu piscina</h2>
+<p class="section-sub reveal">Desde el mantenimiento de rutina hasta la recuperación total del agua. Cada servicio está pensado para que vos no tengas que preocuparte por nada — nosotros nos ocupamos, vos disfrutás.</p>
+<div class="services-grid">
+<div class="svc reveal">
+<div class="svc-icon">🔄</div>
+<h3>Mantenimiento de Piscinas</h3>
+<p>Visitas periódicas para que tu piscina esté siempre lista, sin que tengas que pensar en ella.</p>
+<ul class="svc-list">
+<li>Aspirado de fondo</li>
+<li>Cepillado de paredes</li>
+<li>Limpieza de línea de flotación</li>
+<li>Limpieza de skimmer</li>
+<li>Control químico y asesoramiento según las necesidades de la piscina</li>
+</ul>
+<a class="btn-consult" href="https://wa.me/5492645494145?text=Hola%2C+quiero+consultar+por+mantenimiento" rel="noopener noreferrer" target="_blank">Consultar →</a>
+</div>
+<div class="svc reveal">
+<div class="svc-icon">✨</div>
+<span class="svc-badge">Ideal para inicio o recuperación de temporada</span>
+<h3>Limpieza Profunda</h3>
+<p>Una puesta a punto integral que deja tu piscina como nueva, lista para el verano.</p>
+<ul class="svc-list">
+<li>Vaciado completo</li>
+<li>Remoción de sarro y sedimentos</li>
+<li>Enjuague de paredes y piso</li>
+<li>Revisión y limpieza superficial del sistema de filtrado</li>
+</ul>
+<div class="svc-result">✔ Lista para comenzar a llenarse el mismo día</div>
+<a class="btn-consult" href="https://wa.me/5492645494145?text=Hola%2C+quiero+consultar+por+limpieza+profunda" rel="noopener noreferrer" target="_blank">Consultar →</a>
+</div>
+<div class="svc reveal">
+<div class="svc-icon">💧</div>
+<span class="svc-badge">Requiere 2 visitas</span>
+<h3>Recuperación de Agua</h3>
+<p>Para piscinas con agua verde, turbia o descuidada. Recuperamos el agua sin necesidad de vaciarla — los productos químicos necesitan tiempo para actuar correctamente, por eso el proceso se hace en dos visitas.</p>
+<div class="svc-visit">
+<span class="svc-visit-tag">1ª visita</span>
+<ul class="svc-list">
+<li>Aspirado inicial</li>
+<li>Control y aplicación de productos químicos</li>
+<li>Cepillado completo</li>
+</ul>
+</div>
+<div class="svc-visit">
+<span class="svc-visit-tag">2ª visita</span>
+<ul class="svc-list">
+<li>Aspirado final</li>
+<li>Cepillado</li>
+<li>Control químico final para dejar el agua segura</li>
+</ul>
+</div>
+<div class="svc-result">✔ Agua recuperada y lista para usar — sin vaciar la piscina</div>
+<a class="btn-consult" href="https://wa.me/5492645494145?text=Hola%2C+quiero+consultar+por+recuperaci%C3%B3n+de+agua" rel="noopener noreferrer" target="_blank">Consultar →</a>
+</div>
+<div class="svc reveal">
+<div class="svc-icon">⚙️</div>
+<h3>Filtros y Equipos</h3>
+<p>Diagnóstico, reparación y mantenimiento de todo el sistema de filtrado y bombeo.</p>
+<ul class="svc-list">
+<li>Cambio de arena para filtros</li>
+<li>Revisión y reparación de bombas</li>
+<li>Instalación de sistemas de automatización</li>
+</ul>
+<a class="btn-consult" href="https://wa.me/5492645494145?text=Hola%2C+quiero+consultar+por+filtros" rel="noopener noreferrer" target="_blank">Consultar →</a>
+</div>
+</div>
+</div>
+</section>
+<!-- DEEP CLEAN -->
+<section class="section dark" id="limpiezas">
+<div class="max">
+<div class="kicker reveal">Limpiezas Profundas</div>
+<h2 class="section-title reveal">De un invierno frío y sucio a un verano cálido y limpio.</h2>
+<p class="section-sub reveal">Piletas abandonadas, con algas o fuera de temporada. Tenemos el equipo para recuperarlas completamente.</p>
+<div class="deep-intro">
+<div class="deep-text reveal">
+<p>Vaciamos tu pileta por completo y eliminamos la suciedad acumulada durante el año. Con equipo profesional, removemos sarro, sedimentos y residuos de paredes y piso. Terminamos con un enjuague final: tu pileta queda lista para empezar a llenarse el mismo día.</p>
+<div class="tl-result">⏱️ Resultados en 5 a 6 horas.</div>
+<div class="timeline">
+<div class="tl-step"><div class="tl-num">1</div><div class="tl-body"><h5>Vaciado completo</h5><p>Extracción total del agua con motobomba de alta potencia.</p></div></div>
+<div class="tl-step"><div class="tl-num">2</div><div class="tl-body"><h5>Limpieza de paredes y piso</h5><p>Lavado intensivo con hidrolavadora Kärcher, eliminando la suciedad acumulada.</p></div></div>
+<div class="tl-step"><div class="tl-num">3</div><div class="tl-body"><h5>Remoción de sarro y sedimentos</h5><p>Tratamiento específico para depósitos minerales y restos en el fondo.</p></div></div>
+<div class="tl-step"><div class="tl-num">4</div><div class="tl-body"><h5>Enjuague completo</h5><p>Últimos detalles para dejar cada superficie impecable.</p></div></div>
+<div class="tl-step"><div class="tl-num">5</div><div class="tl-body"><h5>Lista para llenar y disfrutar</h5><p>Tu pileta queda en condiciones de empezar a llenarse el mismo día.</p></div></div>
+</div>
+<a class="btn-wa" href="https://wa.me/5492645494145?text=Hola%2C+necesito+una+limpieza+profunda" rel="noopener noreferrer" style="margin-top:6px;width:fit-content" target="_blank"><svg fill="currentColor" height="20" viewbox="0 0 24 24" width="20"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"></path></svg> Pedir presupuesto</a>
+</div>
+<div class="deep-hero-img reveal"><img alt="Limpieza profunda en proceso" decoding="async" height="1100" loading="lazy" src="images/limpieza-profunda-en-proceso-23ccd77bb3.webp" width="619"/></div>
+</div>
+<div class="deep-gallery">
+<div class="dgal reveal" onclick="openLb(this)"><img alt="Proceso de limpieza profunda" decoding="async" height="1100" loading="lazy" src="images/proceso-de-limpieza-profunda-2d5068c8cb.webp" width="825"/><span class="dtag">Proceso</span></div>
+<div class="dgal reveal" onclick="openLb(this)"><img alt="Lavado y remoción de sarro" decoding="async" height="1100" loading="lazy" src="images/lavado-y-remoci-n-de-sarro-1479c7007b.webp" width="825"/><span class="dtag">Lavado</span></div>
+<div class="dgal reveal" onclick="openLb(this)"><img alt="Resultado final" decoding="async" height="1100" loading="lazy" src="images/resultado-final-d1ef078607.webp" width="825"/><span class="dtag">Resultado final</span></div>
+</div>
+</div>
+</section>
+<!-- FILTER -->
+<section class="section" id="filtros">
+<div class="max">
+<div class="kicker reveal">Sistema de Filtrado</div>
+<h2 class="section-title reveal">Mantenimiento técnico.<br/>No solo limpieza visual.</h2>
+<p class="section-sub reveal">El filtro es el corazón de tu piscina. Lo revisamos, limpiamos y mantenemos para que funcione al máximo.</p>
+<div class="filter-intro">
+<div class="filter-text reveal">
+<p>Un sistema en buen estado garantiza agua cristalina, reduce el consumo de químicos y prolonga la vida útil de tu piscina. Trabajamos con filtros de arena, cartucho y diatomeas.</p>
+<div class="ff-list">
+<div class="ff"><div class="ff-ico">🔍</div><div><h5>Diagnóstico completo</h5><p>Revisamos bomba, válvula selectora, presión y caudal de agua.</p></div></div>
+<div class="ff"><div class="ff-ico">🧹</div><div><h5>Limpieza de arena o cartucho</h5><p>Lavado a contracorriente o limpieza física según el sistema.</p></div></div>
+<div class="ff"><div class="ff-ico">🔧</div><div><h5>Reparación y reemplazo</h5><p>Piezas dañadas reparadas con repuestos de calidad.</p></div></div>
+<div class="ff"><div class="ff-ico">📋</div><div><h5>Informe de estado</h5><p>Te explicamos el estado del sistema y las mejoras aplicadas.</p></div></div>
+</div>
+<a class="btn-wa" href="https://wa.me/5492645494145?text=Hola%2C+quiero+que+revisen+el+filtro+de+mi+piscina" rel="noopener noreferrer" style="width:fit-content" target="_blank"><svg fill="currentColor" height="20" viewbox="0 0 24 24" width="20"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"></path></svg> Consultar filtros</a>
+</div>
+<div class="filter-imgs reveal">
+<div class="fi-main" onclick="openLb(this)"><img alt="Sistema de filtrado piscina" decoding="async" height="1100" loading="lazy" src="images/sistema-de-filtrado-piscina-f1a7872339.webp" width="619"/></div>
+<div class="fi-sm" onclick="openLb(this)"><img alt="Bomba y filtro" decoding="async" height="1100" loading="lazy" src="images/bomba-y-filtro-a3436005d4.webp" width="825"/></div>
+<div class="fi-sm" onclick="openLb(this)"><img alt="Revisión filtro" decoding="async" height="1100" loading="lazy" src="images/revisi-n-filtro-c35a008751.webp" width="619"/></div>
+</div>
+</div>
+</div>
+</section>
+<!-- GALLERY -->
+<section class="section dark" id="galeria">
+<div class="max">
+<div class="kicker reveal">Nuestro trabajo</div>
+<h2 class="section-title reveal">Resultados que hablan solos</h2>
+<p class="section-sub reveal">Fotos reales de trabajos en San Juan. Cada imagen muestra el compromiso que ponemos en cada pileta.</p>
+<div class="gal-grid">
+<div class="gi wide tall reveal" onclick="openLb(this)"><img alt="Piscina mosaico" decoding="async" height="1100" loading="lazy" src="images/piscina-clean-pools-sj-6b53ff5ebe.webp" width="825"/><div class="gi-ov"><span class="gi-label">Pileta mosaico · Pocito</span></div></div>
+<div class="gi reveal" onclick="openLb(this)"><img alt="Mantenimiento" decoding="async" height="1100" loading="lazy" src="images/mantenimiento-piscina-61b1f33af4.webp" width="825"/><div class="gi-ov"><span class="gi-label">Mantenimiento · Capital</span></div></div>
+<div class="gi tall reveal" onclick="openLb(this)"><img alt="Trabajo profesional" decoding="async" height="1100" loading="lazy" src="images/trabajo-profesional-0b03afd50a.webp" width="825"/><div class="gi-ov"><span class="gi-label">Trabajo en campo</span></div></div>
+<div class="gi reveal" onclick="openLb(this)"><img alt="Pileta orgánica" decoding="async" height="1100" loading="lazy" src="images/pileta-org-nica-cd80615b3f.webp" width="825"/><div class="gi-ov"><span class="gi-label">Pileta orgánica · Sta. Lucía</span></div></div>
+<div class="gi reveal" onclick="openLb(this)"><img alt="Apertura" decoding="async" height="1100" loading="lazy" src="images/apertura-49e8ae77f9.webp" width="825"/><div class="gi-ov"><span class="gi-label">Apertura · Rivadavia</span></div></div>
+<div class="gi reveal" onclick="openLb(this)"><img alt="Pileta azul" decoding="async" height="1100" loading="lazy" src="images/pileta-azul-17255cddb8.webp" width="825"/><div class="gi-ov"><span class="gi-label">Mantenimiento · Caucete</span></div></div>
+</div>
+<div style="text-align:center;margin-top:24px">
+<a class="btn-ghost" href="https://www.instagram.com/cleanpoolssj" rel="noopener noreferrer" style="display:inline-flex;color:var(--sky);border-color:var(--border2)" target="_blank">📸 Ver más en @cleanpoolssj →</a>
+</div>
+</div>
+</section>
+<!-- TESTIMONIALS -->
+<section class="section" id="testimonios">
+<div class="max">
+<div class="kicker reveal">Testimonios</div>
+<h2 class="section-title reveal">Lo que dicen nuestros clientes</h2>
+<div class="testi-note reveal">
+<div class="g-badge"><svg height="14" viewbox="0 0 24 24" width="14"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"></path><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"></path><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z" fill="#FBBC05"></path><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"></path></svg><span class="gs">★★★★★</span><span>4.9</span></div>
+<span>Reseñas reales de Google Maps. <a href="https://maps.app.goo.gl/wr1vRoCGGcXhoQVaA" rel="noopener noreferrer" target="_blank">Ver todas →</a></span>
+</div>
+<div class="testi-grid">
+<div class="tc reveal"><div class="tc-top"><div class="tc-stars">★★★★★</div><svg height="16" viewbox="0 0 24 24" width="16"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"></path><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"></path><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z" fill="#FBBC05"></path><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"></path></svg></div><blockquote>"Son muy profesionales. Desde que los contratamos no tuvimos que preocuparnos más por la pileta. La tienen siempre cristalina."</blockquote><div class="tc-author"><div class="tc-av">LV</div><div><div class="tc-name">Laura V.</div><div class="tc-zone">Pocito · Temporada 2022–23</div></div></div></div>
+<div class="tc reveal"><div class="tc-top"><div class="tc-stars">★★★★★</div><svg height="16" viewbox="0 0 24 24" width="16"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"></path><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"></path><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z" fill="#FBBC05"></path><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"></path></svg></div><blockquote>"Contratamos la limpieza profunda y quedamos muy contentos. Llegaron a horario y la pileta quedó lista el mismo día."</blockquote><div class="tc-author"><div class="tc-av">CR</div><div><div class="tc-name">Carlos R.</div><div class="tc-zone">Rawson · Temporada 2024–25</div></div></div></div>
+<div class="tc reveal"><div class="tc-top"><div class="tc-stars">★★★★★</div><svg height="16" viewbox="0 0 24 24" width="16"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"></path><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"></path><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z" fill="#FBBC05"></path><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"></path></svg></div><blockquote>"Hacen el mantenimiento semanal y nunca fallaron. Siempre avisan cuando vienen y mandan foto del estado del agua."</blockquote><div class="tc-author"><div class="tc-av">EH</div><div><div class="tc-name">Erika H.</div><div class="tc-zone">Capital · Temporada 2022–23</div></div></div></div>
+</div>
+</div>
+</section>
+<!-- SOL BANNER -->
+<section class="section dark">
+<div class="max">
+<div class="sol-banner reveal">
+<div class="sol-banner-text">
+<div class="kicker" style="margin-bottom:10px">Nuevo</div>
+<h3>Soluciones Clean Pools</h3>
+<p>Guías profesionales, diagnósticos visuales y consejos técnicos. Agua verde, turbia, algas, filtros y más — explicado paso a paso con fotos reales y dosificaciones exactas.</p>
+<a class="btn-accent" href="soluciones.html">Explorar Soluciones →</a>
+</div>
+<img alt="Gotín experto Clean Pools" class="sol-gotin" decoding="async" height="1100" loading="lazy" src="images/got-n-experto-clean-pools-ff2fc48ad9.webp" width="812"/>
+</div>
+</div>
+</section>
+<!-- ZONES -->
+<section class="section" id="cobertura">
+<div class="max">
+<div class="kicker reveal">Cobertura</div>
+<h2 class="section-title reveal">Trabajamos en toda la provincia</h2>
+<p class="section-sub reveal">Servicio activo en los principales departamentos de San Juan. Consultanos sin compromiso.</p>
+<div class="zones-grid">
+<div class="zone reveal"><div class="zone-logo"><svg fill="none" viewbox="0 0 40 40"><circle cx="20" cy="20" fill="#0B1E30" r="18" stroke="#00B4D8" stroke-width="1.5"></circle><text fill="#00B4D8" font-family="Manrope,sans-serif" font-size="8" font-weight="800" text-anchor="middle" x="20" y="24">CAP</text></svg></div><h4>Capital</h4><p>Alta densidad de clientes residenciales durante toda la temporada.</p></div>
+<div class="zone reveal"><div class="zone-logo"><svg fill="none" viewbox="0 0 40 40"><circle cx="20" cy="20" fill="#0B1E30" r="18" stroke="#00B4D8" stroke-width="1.5"></circle><text fill="#00B4D8" font-family="Manrope,sans-serif" font-size="8" font-weight="800" text-anchor="middle" x="20" y="24">POC</text></svg></div><h4>Pocito</h4><p>Cobertura para hogares, complejos y quintas con mantenimiento semanal.</p></div>
+<div class="zone reveal"><div class="zone-logo"><svg fill="none" viewbox="0 0 40 40"><circle cx="20" cy="20" fill="#0B1E30" r="18" stroke="#00B4D8" stroke-width="1.5"></circle><text fill="#00B4D8" font-family="Manrope,sans-serif" font-size="8" font-weight="800" text-anchor="middle" x="20" y="24">RAW</text></svg></div><h4>Rawson</h4><p>Atención rápida con clientes residenciales y servicios de temporada.</p></div>
+<div class="zone reveal"><div class="zone-logo"><svg fill="none" viewbox="0 0 40 40"><circle cx="20" cy="20" fill="#0B1E30" r="18" stroke="#00B4D8" stroke-width="1.5"></circle><text fill="#00B4D8" font-family="Manrope,sans-serif" font-size="8" font-weight="800" text-anchor="middle" x="20" y="24">RIV</text></svg></div><h4>Rivadavia</h4><p>Servicio activo en quintas y propiedades con uso familiar.</p></div>
+<div class="zone reveal"><div class="zone-logo"><svg fill="none" viewbox="0 0 40 40"><circle cx="20" cy="20" fill="#0B1E30" r="18" stroke="#00B4D8" stroke-width="1.5"></circle><text fill="#00B4D8" font-family="Manrope,sans-serif" font-size="9" font-weight="800" text-anchor="middle" x="20" y="24">S.L.</text></svg></div><h4>Santa Lucía</h4><p>Mantenimiento periódico acordado por temporada.</p></div>
+<div class="zone reveal"><div class="zone-logo"><svg fill="none" viewbox="0 0 40 40"><circle cx="20" cy="20" fill="#0B1E30" r="18" stroke="#00B4D8" stroke-width="1.5"></circle><text fill="#00B4D8" font-family="Manrope,sans-serif" font-size="8" font-weight="800" text-anchor="middle" x="20" y="24">CAU</text></svg></div><h4>Caucete</h4><p>Atención personalizada para familias y quintas del este.</p></div>
+<div class="zone reveal"><div class="zone-logo"><svg fill="none" viewbox="0 0 40 40"><circle cx="20" cy="20" fill="#0B1E30" r="18" stroke="#00B4D8" stroke-width="1.5"></circle><text fill="#00B4D8" font-family="Manrope,sans-serif" font-size="9" font-weight="800" text-anchor="middle" x="20" y="24">9JUL</text></svg></div><h4>9 de Julio</h4><p>Visitas programadas y servicio de temporada.</p></div>
+<div class="zone reveal"><div class="zone-logo"><svg fill="none" viewbox="0 0 40 40"><circle cx="20" cy="20" fill="#0B1E30" r="18" stroke="#00B4D8" stroke-width="1.5"></circle><text fill="#00B4D8" font-family="Manrope,sans-serif" font-size="8" font-weight="800" text-anchor="middle" x="20" y="24">ZON</text></svg></div><h4>Zonda</h4><p>Servicio activo para propiedades y quintas con atención personalizada.</p></div>
+</div>
+</div>
+</section>
+<!-- FAQ -->
+<section class="section dark" id="faq">
+<div class="max">
+<div class="kicker reveal">FAQ</div>
+<h2 class="section-title reveal">Preguntas frecuentes</h2>
+<div class="faq-list">
+<div class="faq-item reveal"><button class="faq-q" onclick="tF(this)">¿Cada cuánto se recomienda el mantenimiento? <span class="faq-arr">↓</span></button><div class="faq-a">En temporada alta (octubre–marzo) lo ideal es una vez por semana, para mantener el agua siempre en condiciones óptimas. En temporada baja, con una vez al mes alcanza para conservarla en buen estado.</div></div>
+<div class="faq-item reveal"><button class="faq-q" onclick="tF(this)">¿Qué incluye la limpieza profunda? <span class="faq-arr">↓</span></button><div class="faq-a">Es un servicio integral en 5 pasos: primero vaciamos la piscina por completo, luego lavamos paredes y piso con hidrolavadora para sacar toda la suciedad acumulada, removemos el sarro y los sedimentos del fondo, limpiamos el sistema de filtrado y terminamos con un enjuague completo. Nosotros llevamos todo el equipo y los productos necesarios — vos no tenés que conseguir ni preparar nada.</div></div>
+<div class="faq-item reveal"><button class="faq-q" onclick="tF(this)">¿La limpieza profunda necesita vaciar la piscina? <span class="faq-arr">↓</span></button><div class="faq-a">Sí. La limpieza profunda requiere el vaciado completo de la piscina, ya que es la única forma de acceder correctamente a paredes y piso para eliminar sarro, sedimentos y suciedad incrustada. Es un proceso más a fondo que el mantenimiento habitual, pensado para dejar tu piscina como nueva antes de empezar la temporada. Si preferís no vaciarla, la alternativa es nuestro servicio de Recuperación de Agua.</div></div>
+<div class="faq-item reveal"><button class="faq-q" onclick="tF(this)">¿Trabajan con quintas y piletas grandes? <span class="faq-arr">↓</span></button><div class="faq-a">Sí. Trabajamos con todo tipo de piscinas: familiares, quintas recreativas, alquileres y piletas de gran volumen. El presupuesto se ajusta al tamaño y la frecuencia.</div></div>
+<div class="faq-item reveal"><button class="faq-q" onclick="tF(this)">¿Cómo se calcula el precio? <span class="faq-arr">↓</span></button><div class="faq-a">Cada presupuesto lo armamos de manera personalizada, considerando el tamaño de la piscina, su estado actual de suciedad, el tipo de servicio solicitado, la frecuencia del mantenimiento y otros factores que puedan influir en el trabajo. Así te aseguramos un precio justo y ajustado a tu caso puntual, sin sorpresas. Escribinos por WhatsApp y te pasamos un presupuesto sin compromiso.</div></div>
+<div class="faq-item reveal"><button class="faq-q" onclick="tF(this)">¿Venden artículos para piletas? <span class="faq-arr">↓</span></button><div class="faq-a">Sí, hacemos delivery de ácido, cloro, pastillas, boyas, floculante y más. Podés pedirlos junto al servicio o por separado.</div></div>
+</div>
+</div>
+</section>
+<!-- CTA BAND -->
+<div class="cta-band">
+<div class="cta-band-bg"></div>
+<div class="cta-band-ov"></div>
+<div class="cta-band-content">
+<img alt="Gotín" class="cta-gotin" decoding="async" height="1100" loading="lazy" src="images/got-n-experto-clean-pools-ff2fc48ad9.webp" width="812"/>
+<h2>¿Tu pileta necesita atención?</h2>
+<p>Escribinos hoy y te respondemos en minutos. La consulta es gratis y sin compromiso.</p>
+<a class="btn-wa-inv" href="https://wa.me/5492645494145?text=Hola%2C+quiero+consultar+por+el+servicio" rel="noopener noreferrer" target="_blank"><svg fill="currentColor" height="20" viewbox="0 0 24 24" width="20"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"></path></svg> Consultá gratis por WhatsApp</a>
+</div>
+</div>
+<!-- CONTACT -->
+<section class="section dark" id="contacto">
+<div class="max">
+<div class="kicker reveal">Contacto</div>
+<h2 class="section-title reveal">Hablemos hoy mismo</h2>
+<p class="section-sub reveal">La consulta es sin compromiso. Respondemos rápido por WhatsApp.</p>
+<div class="contact-grid">
+<div class="reveal">
+<h3 style="font-family:'Playfair Display',serif;font-size:1.35rem;font-weight:800;margin-bottom:20px;color:var(--text)">Encontranos en</h3>
+<div class="ci"><div class="ci-icon">💬</div><div><div class="ci-label">WhatsApp</div><a href="https://wa.me/5492645494145" rel="noopener noreferrer" target="_blank">+54 264 549-4145</a></div></div>
+<div class="ci"><div class="ci-icon">📧</div><div><div class="ci-label">Email</div><a href="mailto:cleanpools@gmail.com">cleanpools@gmail.com</a></div></div>
+<div class="ci"><div class="ci-icon">📸</div><div><div class="ci-label">Instagram</div><a href="https://www.instagram.com/cleanpoolssj" rel="noopener noreferrer" target="_blank">@cleanpoolssj</a></div></div>
+<div class="ci"><div class="ci-icon">📍</div><div><div class="ci-label">Ubicación</div><a href="https://maps.app.goo.gl/wr1vRoCGGcXhoQVaA" rel="noopener noreferrer" target="_blank">San Juan, Argentina</a></div></div>
+<div style="margin-top:22px"><a class="btn-wa" href="https://wa.me/5492645494145?text=Hola%2C+quiero+consultar" rel="noopener noreferrer" style="font-size:.85rem;padding:12px 22px" target="_blank"><svg fill="currentColor" height="20" viewbox="0 0 24 24" width="20"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"></path></svg> Escribinos ahora</a></div>
+</div>
+<div class="reveal">
+<form class="cf" onsubmit="sendF(event)">
+<div class="form-row">
+<label class="sr-only" for="cf-nombre">Tu nombre</label>
+<input class="fi" id="cf-nombre" name="nombre" placeholder="Tu nombre *" required="" type="text"/>
+<label class="sr-only" for="cf-whatsapp">Número de WhatsApp</label>
+<input class="fi" id="cf-whatsapp" name="whatsapp" placeholder="WhatsApp *" required="" type="tel"/>
+</div>
+<label class="sr-only" for="cf-servicio">Tipo de servicio</label>
+<select class="fi" id="cf-servicio" name="servicio" style="background:var(--card);cursor:pointer">
+<option value="">Tipo de servicio</option>
+<option>Mantenimiento periódico</option>
+<option>Limpieza profunda</option>
+<option>Apertura de temporada</option>
+<option>Control químico</option>
+<option>Sistema de filtrado</option>
+<option>Delivery de artículos</option>
+<option>Otro</option>
+</select>
+<label class="sr-only" for="cf-mensaje">Contanos sobre tu pileta</label>
+<textarea class="fi" id="cf-mensaje" name="mensaje" placeholder="Contanos sobre tu pileta: zona, tamaño, estado aproximado..."></textarea>
+<button class="btn-form" type="submit">Enviar por WhatsApp →</button>
+</form>
+</div>
+</div>
+</div>
+</section>
+<!-- FOOTER -->
+<footer>
+<div class="foot-inner">
+<div>
+<img alt="Clean Pools SJ" class="foot-logo" decoding="async" height="192" loading="lazy" src="images/logo.webp" width="200"/>
+<p class="foot-desc">Servicio profesional de mantenimiento y limpieza de piscinas en San Juan, Argentina.</p>
+<div class="foot-soc">
+<a class="fsoc" href="https://www.instagram.com/cleanpoolssj" rel="noopener noreferrer" target="_blank">📸</a>
+<a class="fsoc" href="https://wa.me/5492645494145" rel="noopener noreferrer" target="_blank">💬</a>
+<a class="fsoc" href="https://maps.app.goo.gl/wr1vRoCGGcXhoQVaA" rel="noopener noreferrer" target="_blank">📍</a>
+</div>
+</div>
+</div>
+<div class="foot-bottom">
+<p>© 2025 Clean Pools SJ · San Juan, Argentina</p>
+<p style="color:var(--sky)">Piletas limpias, familias felices 💧</p>
+</div>
+</footer>
+<!-- LIGHTBOX -->
+<div class="lb" id="lb" onclick="closeLb(event)">
+<button class="lb-x" onclick="closeLb()">✕</button>
+<img alt="" id="lb-img" src=""/>
+</div>
+<!-- CHAT WIDGET — Gotín flotando encima del botón WA -->
+<div class="chat-widget">
+<div class="chat-mascot" id="chatMascot">
+<img alt="Gotín" class="chat-gotin" decoding="async" height="1100" loading="lazy" src="images/got-n-experto-clean-pools-ff2fc48ad9.webp" width="812"/>
+<div class="chat-bubble" id="chatBubble">
+<strong>¡Hola! 👋</strong>
+      ¿Tu pileta necesita ayuda? Escribinos, te respondemos rápido.
+    </div>
+</div>
+<a aria-label="WhatsApp" class="chat-btn" href="https://wa.me/5492645494145?text=Hola%2C+quiero+consultar+por+el+servicio+de+piscinas" rel="noopener noreferrer" target="_blank">
+<div class="chat-main">
+<svg fill="currentColor" height="20" viewbox="0 0 24 24" width="20"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"></path></svg>
+<div class="chat-txt">
+<span class="chat-label">¡Hablá con nosotros!</span>
+<span class="chat-cta">Pedí tu presupuesto</span>
+</div>
+</div>
+</a>
+</div>
+<script>
+// Menú mobile — panel propio, sin select nativo
+function toggleMobileMenu(){
+  const p=document.getElementById('mobilePanel'),b=document.getElementById('navBurger');
+  const isOpen=p.classList.toggle('open');
+  b.classList.toggle('open',isOpen);
+  b.setAttribute('aria-expanded',isOpen?'true':'false');
+}
+function closeMobileMenu(){
+  document.getElementById('mobilePanel').classList.remove('open');
+  document.getElementById('navBurger').classList.remove('open');
+  document.getElementById('navBurger').setAttribute('aria-expanded','false');
+}
+
+// Theme
+function toggleTheme(){
+  const h=document.documentElement,isD=h.getAttribute('data-theme')==='dark',next=isD?'light':'dark';
+  h.setAttribute('data-theme',next);localStorage.setItem('cpTheme',next);
+  document.getElementById('themeBtn').textContent=next==='dark'?'🌙':'☀️';
+}
+(function(){
+  const t=localStorage.getItem('cpTheme')||'light';
+  document.documentElement.setAttribute('data-theme',t);
+  const b=document.getElementById('themeBtn');if(b)b.textContent=t==='dark'?'🌙':'☀️';
+})();
+
+// Nav stuck on scroll (sin hide — siempre visible)
+const nav=document.getElementById('nav');
+window.addEventListener('scroll',()=>{
+  nav.classList.toggle('stuck',window.scrollY>30);
+},{passive:true});
+
+// Chat bubble
+setTimeout(()=>document.getElementById('chatBubble').classList.add('show'),2000);
+setTimeout(()=>document.getElementById('chatBubble').classList.remove('show'),8000);
+document.getElementById('chatBubble').addEventListener('click',()=>document.getElementById('chatBubble').classList.remove('show'));
+
+// FAQ
+function tF(btn){
+  const item=btn.parentElement,wasOpen=item.classList.contains('open');
+  document.querySelectorAll('.faq-item').forEach(i=>i.classList.remove('open'));
+  if(!wasOpen)item.classList.add('open');
+}
+
+// Lightbox
+function openLb(el){document.getElementById('lb-img').src=el.querySelector('img').src;document.getElementById('lb').classList.add('open');document.body.style.overflow='hidden';}
+function closeLb(e){if(!e||e.target===document.getElementById('lb')||e.target.classList.contains('lb-x')){document.getElementById('lb').classList.remove('open');document.body.style.overflow='';}}
+document.addEventListener('keydown',e=>{if(e.key==='Escape')closeLb({target:document.getElementById('lb')});});
+
+// Form
+function sendF(e){e.preventDefault();const f=e.target,n=f.querySelector('input[type=text]').value,t=f.querySelector('input[type=tel]').value,s=f.querySelector('select').value||'Sin especificar',m=f.querySelector('textarea').value;window.open('https://wa.me/5492645494145?text='+encodeURIComponent('Hola! Soy '+n+' ('+t+'). Servicio: '+s+(m?' — '+m:'')),'_blank');}
+
+// Reveal
+const obs=new IntersectionObserver(entries=>entries.forEach((e,i)=>{if(e.isIntersecting)setTimeout(()=>e.target.classList.add('vis'),i*50);}),{threshold:.07});
+document.querySelectorAll('.reveal').forEach(el=>obs.observe(el));
+</script>
+</body>
+</html>

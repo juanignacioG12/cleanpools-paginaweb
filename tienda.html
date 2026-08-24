@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+
+<html data-theme="light" lang="es">
+<head>
+<meta charset="utf-8"/>
+<meta content="strict-origin-when-cross-origin" name="referrer"/>
+<meta content="nosniff" http-equiv="X-Content-Type-Options"/>
+<meta content="width=device-width,initial-scale=1.0" name="viewport"/>
+<meta content="index, follow" name="robots"/>
+<title>Tienda Clean Pools SJ — Artículos para Piscina</title>
+<meta content="Accesorios y productos químicos para el mantenimiento de tu piscina en San Juan: boyas, cepillos, cloro, alguicidas y más. Armá tu pedido y coordinamos la entrega por WhatsApp." name="description"/>
+<link href="https://cleanpools-paginaweb.vercel.app/tienda.html" rel="canonical"/>
+<meta content="website" property="og:type"/>
+<meta content="https://cleanpools-paginaweb.vercel.app/tienda.html" property="og:url"/>
+<meta content="Clean Pools SJ" property="og:site_name"/>
+<meta content="Tienda Clean Pools SJ — Artículos para Piscina" property="og:title"/>
+<meta content="Accesorios y productos químicos para el mantenimiento de tu piscina. Armá tu pedido y coordinamos la entrega por WhatsApp." property="og:description"/>
+<meta content="https://cleanpools-paginaweb.vercel.app/og-image.jpg" property="og:image"/>
+<meta content="1200" property="og:image:width"/>
+<meta content="630" property="og:image:height"/>
+<meta content="es_AR" property="og:locale"/>
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="Tienda Clean Pools SJ — Artículos para Piscina" name="twitter:title"/>
+<meta content="Accesorios y productos químicos para el mantenimiento de tu piscina. Armá tu pedido y coordinamos la entrega por WhatsApp." name="twitter:description"/>
+<meta content="https://cleanpools-paginaweb.vercel.app/og-image.jpg" name="twitter:image"/>
+<link href="images/favicon-32.png" rel="icon" type="image/png" sizes="32x32"/>
+<link href="images/apple-touch-icon.png" rel="apple-touch-icon"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&amp;family=Playfair+Display:wght@700;800&amp;display=swap" rel="stylesheet"/>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+[data-theme="light"]{--bg:#F0F8FF;--surf:#E2F0FA;--card:#FFFFFF;--card2:#DCF0FC;--border:rgba(0,100,180,.15);--border2:rgba(0,150,210,.3);--text:#03101C;--text2:#1A3A55;--muted:#4A7090;--sh:0 12px 40px rgba(0,100,180,.15);--sh2:0 4px 16px rgba(0,100,180,.12)}
+:root{--accent:#0077B6;--sky:#00B4D8;--bright:#90E0EF;--wa:#25D366;--r:16px;--r2:11px}
+body{font-family:'Manrope',sans-serif;background:var(--bg);color:var(--text);line-height:1.5}
+.max{max-width:1200px;margin:0 auto;padding:0 5vw}
+h1,h2,h3{font-family:'Playfair Display',serif}
+
+/* NAV */
+nav{position:sticky;top:0;z-index:500;background:rgba(240,248,255,.96);backdrop-filter:blur(10px);border-bottom:1px solid var(--border);height:66px;display:flex;align-items:center}
+nav .max{display:flex;align-items:center;justify-content:space-between;width:100%}
+.logo{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--text);font-weight:800;font-size:1.05rem}
+.logo img{width:34px;height:34px;object-fit:contain}
+.back-link{color:var(--muted);text-decoration:none;font-size:.85rem;font-weight:700;display:flex;align-items:center;gap:5px}
+.back-link:hover{color:var(--accent)}
+.nav-r{display:flex;align-items:center;gap:14px}
+.cart-btn{position:relative;background:var(--card);border:1px solid var(--border2);border-radius:50px;padding:9px 16px;font-weight:800;font-size:.85rem;cursor:pointer;display:flex;align-items:center;gap:7px;color:var(--text)}
+.cart-badge{background:var(--accent);color:#fff;font-size:.68rem;font-weight:800;border-radius:50px;min-width:19px;height:19px;display:flex;align-items:center;justify-content:center;padding:0 5px}
+
+/* HERO */
+.store-hero{padding:36px 0 8px}
+.kicker{color:var(--sky);font-weight:800;font-size:.78rem;letter-spacing:.08em;text-transform:uppercase;margin-bottom:8px}
+.store-title{font-size:clamp(1.6rem,3vw,2.3rem);font-weight:800;margin-bottom:8px}
+.store-sub{color:var(--text2);font-size:.95rem;max-width:600px;margin-bottom:20px}
+
+/* TABS */
+.cat-tabs{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:28px}
+.cat-tab{background:var(--card);border:1px solid var(--border2);border-radius:50px;padding:9px 18px;font-weight:700;font-size:.83rem;cursor:pointer;color:var(--text2);transition:all .15s}
+.cat-tab.active{background:var(--accent);color:#fff;border-color:var(--accent)}
+
+/* GRID */
+.prod-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:18px;padding-bottom:60px}
+.pcard{background:transparent;border-radius:var(--r);perspective:1400px;height:380px}
+.pcard-inner{position:relative;width:100%;height:100%;transition:transform .6s cubic-bezier(.4,.2,.2,1);transform-style:preserve-3d}
+.pcard.flipped .pcard-inner{transform:rotateY(180deg)}
+.pcard-front,.pcard-back{position:absolute;inset:0;backface-visibility:hidden;-webkit-backface-visibility:hidden;background:var(--card);border:1px solid var(--border);border-radius:var(--r);box-shadow:var(--sh2);display:flex;flex-direction:column;overflow:hidden}
+.pcard-back{transform:rotateY(180deg);padding:18px;justify-content:space-between}
+.pcard-img{aspect-ratio:1/1;display:flex;align-items:center;justify-content:center;font-size:3.2rem;background:linear-gradient(135deg,var(--card2),var(--bg));overflow:hidden}
+.pcard-img img{width:100%;height:100%;object-fit:contain;padding:10px}
+.pcard-body{padding:14px 14px 16px;display:flex;flex-direction:column;gap:8px;flex:1}
+.pcard-name{font-size:.85rem;font-weight:700;line-height:1.3;min-height:2.3em}
+.pcard-price{font-size:1.15rem;font-weight:800;color:var(--accent)}
+.pcard-foot{margin-top:auto;display:flex;align-items:center;gap:8px}
+.flip-btn{position:absolute;top:8px;right:8px;z-index:2;height:26px;padding:0 12px;border-radius:50px;background:rgba(255,255,255,.92);border:1px solid var(--border2);cursor:pointer;font-size:.7rem;font-weight:800;color:var(--accent);display:flex;align-items:center;justify-content:center;gap:4px;box-shadow:0 2px 8px rgba(0,0,0,.15);transition:transform .2s;white-space:nowrap}
+.flip-btn:hover{transform:scale(1.06)}
+.pcard-back-title{font-size:.9rem;font-weight:800;margin-bottom:8px}
+.pcard-back-desc{font-size:.78rem;color:var(--text2);line-height:1.55;flex:1;overflow-y:auto}
+.pcard-back-price{font-size:1.1rem;font-weight:800;color:var(--accent);margin:10px 0}
+.qty-stepper{display:flex;align-items:center;border:1px solid var(--border2);border-radius:8px;overflow:hidden}
+.qty-stepper button{background:var(--card2);border:none;width:28px;height:30px;font-size:1rem;font-weight:800;cursor:pointer;color:var(--text)}
+.qty-stepper span{width:30px;text-align:center;font-weight:700;font-size:.85rem}
+.add-btn{flex:1;background:var(--accent);color:#fff;border:none;border-radius:8px;padding:8px 6px;font-weight:800;font-size:.78rem;cursor:pointer;transition:background .15s}
+.pcard-back .add-btn{flex:none;padding:10px 6px;margin-top:auto}
+.add-btn:hover{background:var(--sky)}
+.add-btn.added{background:var(--wa)}
+
+/* CART DRAWER */
+.overlay{position:fixed;inset:0;background:rgba(3,16,28,.5);z-index:998;display:none}
+.overlay.open{display:block}
+.cart-drawer{position:fixed;top:0;right:-420px;width:min(400px,92vw);height:100%;background:var(--bg);z-index:999;box-shadow:-10px 0 40px rgba(0,0,0,.2);transition:right .3s ease;display:flex;flex-direction:column}
+.cart-drawer.open{right:0}
+.cart-head{padding:20px;border-bottom:1px solid var(--border);display:flex;justify-content:space-between;align-items:center}
+.cart-head h3{font-size:1.15rem}
+.cart-close{background:none;border:none;font-size:1.4rem;cursor:pointer;color:var(--muted)}
+.cart-items{flex:1;overflow-y:auto;padding:14px 20px}
+.cart-item{display:flex;gap:12px;padding:14px 0;border-bottom:1px solid var(--border)}
+.cart-item-icon{font-size:1.8rem;width:48px;height:48px;display:flex;align-items:center;justify-content:center;background:var(--card2);border-radius:10px;flex-shrink:0;overflow:hidden}
+.cart-item-icon img{width:100%;height:100%;object-fit:contain;padding:4px}
+.cart-item-info{flex:1}
+.cart-item-name{font-size:.82rem;font-weight:700;margin-bottom:4px}
+.cart-item-price{font-size:.78rem;color:var(--muted)}
+.cart-item-row{display:flex;align-items:center;justify-content:space-between;margin-top:6px}
+.cart-item-remove{background:none;border:none;color:#d33;font-size:.75rem;font-weight:700;cursor:pointer}
+.cart-empty{text-align:center;color:var(--muted);padding:60px 20px;font-size:.9rem}
+.cart-foot{padding:18px 20px;border-top:1px solid var(--border)}
+.cart-total-row{display:flex;justify-content:space-between;font-weight:800;font-size:1.05rem;margin-bottom:14px}
+.checkout-btn{width:100%;background:var(--wa);color:#fff;border:none;border-radius:12px;padding:14px;font-weight:800;font-size:.95rem;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:8px}
+.checkout-btn:disabled{background:var(--muted);cursor:not-allowed}
+.cart-note{font-size:.72rem;color:var(--muted);text-align:center;margin-top:10px}
+
+@media(max-width:600px){
+  .prod-grid{grid-template-columns:repeat(auto-fill,minmax(150px,1fr))}
+  .pcard{height:330px}
+  .pcard-img{font-size:2.4rem}
+  .back-link span{display:none}
+}
+</style>
+</head>
+<body>
+<nav>
+<div class="max">
+<a class="logo" href="index.html"><img alt="Clean Pools SJ" decoding="async" fetchpriority="high" height="192" src="images/logo.webp" width="200"/>Clean Pools SJ</a>
+<div class="nav-r">
+<a class="back-link" href="index.html">← <span>Volver al inicio</span></a>
+<button class="cart-btn" onclick="toggleCart(true)">🛒 Carrito <span class="cart-badge" id="cartBadge">0</span></button>
+</div>
+</div>
+</nav>
+<section class="store-hero">
+<div class="max">
+<div class="kicker">Tienda Online</div>
+<h1 class="store-title">Artículos para tu piscina</h1>
+<p class="store-sub">Armá tu pedido, agregá los productos que necesitás y enviamos todo directo a tu WhatsApp para coordinar la entrega. <strong>Si ya sos cliente de mantenimiento, el envío de tus productos es completamente gratis.</strong></p>
+<div class="cat-tabs" id="catTabs"></div>
+</div>
+</section>
+<section class="max">
+<div class="prod-grid" id="prodGrid"></div>
+</section>
+<div class="overlay" id="overlay" onclick="toggleCart(false)"></div>
+<div class="cart-drawer" id="cartDrawer">
+<div class="cart-head">
+<h3>Tu carrito</h3>
+<button class="cart-close" onclick="toggleCart(false)">✕</button>
+</div>
+<div class="cart-items" id="cartItems"></div>
+<div class="cart-foot">
+<div class="cart-total-row"><span>Total</span><span id="cartTotal">$0</span></div>
+<button class="checkout-btn" id="checkoutBtn" onclick="checkout()">💬 Finalizar pedido por WhatsApp</button>
+<div class="cart-note">Te vamos a contactar por WhatsApp para confirmar el pedido y coordinar la entrega o el pago.</div>
+</div>
+</div>
+<script>
+const PRODUCTS = [
+  {id:1,cat:'accesorios',icon:'🎣',img:'images/producto-1-bd6356c6a9.webp',name:'Boya dosificadora grande importada',price:12900,desc:'Boya flotante para cloro o pastillas multiacción. Regula la dosificación automáticamente mientras circula por la piscina. Válvula ajustable para controlar la velocidad de disolución.'},
+  {id:2,cat:'accesorios',icon:'🕸️',img:'images/producto-2-4e52c2933b.webp',name:'Saca hojas 19mm',price:5500,desc:'Red para retirar hojas y residuos flotantes o del fondo. Diámetro 19mm, compatible con mango telescópico estándar.'},
+  {id:3,cat:'accesorios',icon:'🕸️',img:'images/producto-3-c5f818abf5.webp',name:'Saca hojas 32mm',price:6500,desc:'Versión reforzada de mayor diámetro (32mm), ideal para piletas grandes o con mucha acumulación de hojas.'},
+  {id:4,cat:'accesorios',icon:'🔧',img:'images/producto-4-02be0fca34.webp',name:'Acople para barrefondo (liso)',price:7200,desc:'Conector liso para mangueras de barrefondo manual. Encastre firme y hermético, evita pérdidas de succión durante la aspirado.'},
+  {id:5,cat:'accesorios',icon:'🔧',img:'images/producto-5-0cb6000c2c.webp',name:'Acople para barrefondo (espiga)',price:7200,desc:'Versión con espiga para mangueras de barrefondo. Mayor sujeción en instalaciones con manguera corrugada.'},
+  {id:6,cat:'accesorios',icon:'📏',img:'images/producto-6-709c4d151e.webp',name:'Mango para saca hojas 19mm',price:21800,desc:'Mango telescópico liviano, se extiende para alcanzar cualquier punto de la piscina sin esfuerzo.'},
+  {id:7,cat:'accesorios',icon:'🧺',img:'images/producto-7-21ba56d3b0.webp',name:'Canasto para skimmer Vulcano',price:9700,desc:'Repuesto de canasto para skimmer Vulcano. Retiene hojas y residuos antes de que lleguen a la bomba, prolongando su vida útil.'},
+  {id:8,cat:'accesorios',icon:'🟢',img:'images/producto-8-66fc9ded21.webp',name:'Boya grande Vulcano',price:15900,desc:'Boya dosificadora de gran capacidad para pastillas de cloro. Flotación estable, no se vuelca con el movimiento del agua.'},
+  {id:9,cat:'accesorios',icon:'🍄',img:'images/producto-9-aa8df3c484.webp',name:'Boya hongo',price:5800,desc:'Boya dosificadora compacta con forma de hongo. Ideal para piletas chicas o como dosificador secundario.'},
+  {id:10,cat:'accesorios',icon:'🧹',img:'images/producto-10-f61d20fa5f.webp',name:'Cepillo curvo 46cm Vulcano',price:15700,desc:'Cepillo curvo de 46cm, cerdas resistentes para remover sarro y algas de paredes curvas y esquinas sin rayar la superficie.'},
+  {id:11,cat:'accesorios',icon:'🔩',img:'images/producto-11-72b91dafc8.webp',name:'Conjunto tapa p/ barrefondo',price:18500,desc:'Kit de tapa y conexión para barrefondo automático. Incluye o-ring para sellado hermético.'},
+  {id:12,cat:'accesorios',icon:'🕳️',img:'images/producto-12-61a18371a6.webp',name:'Trampa de pelos Vulcano',price:13700,desc:'Prefiltro que se instala antes de la bomba para retener cabello y residuos finos, evitando que dañen el motor.'},
+  {id:13,cat:'accesorios',icon:'🧹',img:'images/producto-13-7f2f9243db.webp',name:'Cepillo recto 29cm Vulcano',price:8900,desc:'Cepillo recto de 29cm para superficies planas: piso y paredes rectas. Cerdas de nylon resistentes al cloro.'},
+  {id:23,cat:'accesorios',icon:'⏱️',img:'images/producto-14-1f82a1cb0b.webp',name:'Temporizador programable SICA',price:19900,desc:'Temporizador mecánico de 24hs para programar el encendido y apagado automático de la bomba. Fácil instalación, ahorra energía y prolonga la vida del equipo.'},
+  {id:14,cat:'quimicos',icon:'🧴',img:'images/producto-15-9458e2a60f.webp',name:'Gel clarificante Makinthal',price:6400,desc:'Gel floculante para colocar en el filtro. Agrupa las partículas finas en suspensión para que el filtro las retenga mejor, dejando el agua cristalina.'},
+  {id:15,cat:'quimicos',icon:'🧪',img:'images/producto-16-8bf306aba2.webp',name:'Alguicida x1L Nataclor',price:8700,desc:'Elimina algas, hongos y bacterias. Acción rápida contra el agua verde. También disponible en bidón de 5L para mayor rendimiento.'},
+  {id:16,cat:'quimicos',icon:'🧴',img:'images/producto-17-59a1db5446.webp',name:'Clarificante x1L Nataclor',price:8300,desc:'Decanta las impurezas que enturbian el agua, dejándola transparente en poco tiempo. También disponible en bidón de 5L.'},
+  {id:17,cat:'quimicos',icon:'🧂',img:'images/producto-18-f0b2ab6abf.webp',name:'Sulfato de aluminio x1kg',price:6400,desc:'Floculante clásico para decantar partículas en suspensión. Económico y de acción comprobada.'},
+  {id:18,cat:'quimicos',icon:'🧂',img:'images/producto-19-3e6852ae9c.webp',name:'Cloro granulado x1kg Nataclor',price:13500,desc:'Cloro granulado de disolución rápida para el mantenimiento regular del nivel de desinfección del agua.'},
+  {id:19,cat:'quimicos',icon:'🧪',img:'images/producto-20-239a782f92.webp',name:'Fungicida Nataclor x1L',price:28900,desc:'Tratamiento específico contra hongos y limo en paredes y piso. Ideal para piletas con manchas persistentes.'},
+  {id:20,cat:'quimicos',icon:'🧂',img:'images/producto-21-7cbb278a06.webp',name:'Cloro instantáneo x1kg Nataclor',price:13500,desc:'Oxypool: cloro de disolución ultra rápida para shock de limpieza profunda. Apto para todas las piscinas.'},
+  {id:21,cat:'quimicos',icon:'🟡',img:'images/producto-22-52fd0b9596.webp',name:'Boya multiacción Nataclor',price:30400,desc:'Pastillas multiacción de liberación lenta: cloro, alguicida y clarificante en un solo producto, para mantenimiento sin complicaciones.'},
+  {id:22,cat:'quimicos',icon:'💊',img:'images/producto-23-8b6df5db39.webp',name:'Pastillas triple acción (unidad)',price:1900,desc:'Pastilla individual triple acción: desinfecta, clarifica y previene algas. Se vende por unidad para reponer según necesites.'},
+];
+const CATS = [{id:'todos',label:'Todos'},{id:'accesorios',label:'🧹 Accesorios'},{id:'quimicos',label:'🧴 Químicos'}];
+
+let cart = JSON.parse(localStorage.getItem('cp_cart') || '{}');
+let activeCat = 'todos';
+
+function fmt(n){ return '$' + n.toLocaleString('es-AR'); }
+function saveCart(){ localStorage.setItem('cp_cart', JSON.stringify(cart)); }
+
+function renderTabs(){
+  const el = document.getElementById('catTabs');
+  el.innerHTML = CATS.map(c => `<button class="cat-tab ${c.id===activeCat?'active':''}" onclick="setCat('${c.id}')">${c.label}</button>`).join('');
+}
+function setCat(id){ activeCat = id; renderTabs(); renderGrid(); }
+
+function renderGrid(){
+  const el = document.getElementById('prodGrid');
+  const list = activeCat==='todos' ? PRODUCTS : PRODUCTS.filter(p=>p.cat===activeCat);
+  el.innerHTML = list.map(p => `
+    <div class="pcard" id="card-${p.id}">
+      <div class="pcard-inner">
+        <div class="pcard-front">
+          <button class="flip-btn" onclick="flipCard(${p.id})" aria-label="Ver descripción">Descripción</button>
+          <div class="pcard-img">${p.img ? `<img src="${p.img}" alt="${p.name}" loading="lazy" decoding="async" width="220" height="220">` : p.icon}</div>
+          <div class="pcard-body">
+            <div class="pcard-name">${p.name}</div>
+            <div class="pcard-price">${fmt(p.price)}</div>
+            <div class="pcard-foot">
+              <div class="qty-stepper">
+                <button onclick="stepQty(${p.id},-1)">−</button>
+                <span id="qty-${p.id}">${cart[p.id]?.qty || 1}</span>
+                <button onclick="stepQty(${p.id},1)">+</button>
+              </div>
+              <button class="add-btn" id="add-${p.id}" onclick="addToCart(${p.id})">Agregar</button>
+            </div>
+          </div>
+        </div>
+        <div class="pcard-back">
+          <button class="flip-btn" onclick="flipCard(${p.id})" aria-label="Volver">↩ Volver</button>
+          <div class="pcard-back-title">${p.name}</div>
+          <div class="pcard-back-desc">${p.desc || 'Consultanos por WhatsApp para más detalles sobre este producto.'}</div>
+          <div class="pcard-back-price">${fmt(p.price)}</div>
+          <button class="add-btn" onclick="addToCart(${p.id})">Agregar al carrito</button>
+        </div>
+      </div>
+    </div>`).join('');
+}
+
+function flipCard(id){
+  document.getElementById('card-'+id).classList.toggle('flipped');
+}
+
+const tempQty = {};
+function stepQty(id, delta){
+  const el = document.getElementById('qty-'+id);
+  let q = parseInt(el.textContent) + delta;
+  if(q < 1) q = 1;
+  el.textContent = q;
+  tempQty[id] = q;
+}
+
+function addToCart(id){
+  const p = PRODUCTS.find(x=>x.id===id);
+  const qty = tempQty[id] || parseInt(document.getElementById('qty-'+id).textContent) || 1;
+  if(cart[id]) cart[id].qty += qty;
+  else cart[id] = {id, qty};
+  saveCart();
+  renderCart();
+  const btn = document.getElementById('add-'+id);
+  btn.textContent = '✓ Agregado'; btn.classList.add('added');
+  setTimeout(()=>{ btn.textContent='Agregar'; btn.classList.remove('added'); }, 1200);
+}
+
+function removeFromCart(id){
+  delete cart[id];
+  saveCart();
+  renderCart();
+}
+function changeCartQty(id, delta){
+  if(!cart[id]) return;
+  cart[id].qty += delta;
+  if(cart[id].qty < 1){ delete cart[id]; } 
+  saveCart();
+  renderCart();
+}
+
+function renderCart(){
+  const ids = Object.keys(cart);
+  const badge = document.getElementById('cartBadge');
+  const totalCount = ids.reduce((a,id)=>a+cart[id].qty,0);
+  badge.textContent = totalCount;
+
+  const itemsEl = document.getElementById('cartItems');
+  if(ids.length === 0){
+    itemsEl.innerHTML = '<div class="cart-empty">🛒<br>Tu carrito está vacío.<br>Agregá productos para empezar.</div>';
+  } else {
+    itemsEl.innerHTML = ids.map(id=>{
+      const p = PRODUCTS.find(x=>x.id==id);
+      const item = cart[id];
+      return `<div class="cart-item">
+        <div class="cart-item-icon">${p.img ? `<img src="${p.img}" alt="${p.name}" decoding="async" width="48" height="48">` : p.icon}</div>
+        <div class="cart-item-info">
+          <div class="cart-item-name">${p.name}</div>
+          <div class="cart-item-price">${fmt(p.price)} c/u</div>
+          <div class="cart-item-row">
+            <div class="qty-stepper">
+              <button onclick="changeCartQty(${id},-1)">−</button>
+              <span>${item.qty}</span>
+              <button onclick="changeCartQty(${id},1)">+</button>
+            </div>
+            <button class="cart-item-remove" onclick="removeFromCart(${id})">Quitar</button>
+          </div>
+        </div>
+      </div>`;
+    }).join('');
+  }
+
+  const total = ids.reduce((a,id)=>{
+    const p = PRODUCTS.find(x=>x.id==id);
+    return a + p.price * cart[id].qty;
+  }, 0);
+  document.getElementById('cartTotal').textContent = fmt(total);
+  document.getElementById('checkoutBtn').disabled = ids.length === 0;
+}
+
+function toggleCart(open){
+  document.getElementById('cartDrawer').classList.toggle('open', open);
+  document.getElementById('overlay').classList.toggle('open', open);
+}
+
+function checkout(){
+  const ids = Object.keys(cart);
+  if(ids.length === 0) return;
+  let lines = ['Hola! Quiero pedir estos artículos:', ''];
+  let total = 0;
+  ids.forEach(id=>{
+    const p = PRODUCTS.find(x=>x.id==id);
+    const item = cart[id];
+    const sub = p.price * item.qty;
+    total += sub;
+    lines.push(`• ${item.qty}x ${p.name} — ${fmt(sub)}`);
+  });
+  lines.push('');
+  lines.push(`Total: ${fmt(total)}`);
+  const msg = encodeURIComponent(lines.join('\n'));
+  window.open('https://wa.me/5492645494145?text=' + msg, '_blank');
+}
+
+renderTabs();
+renderGrid();
+renderCart();
+</script>
+</body>
+</html>
