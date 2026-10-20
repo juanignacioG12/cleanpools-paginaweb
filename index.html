@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="referrer" content="strict-origin-when-cross-origin">
 <meta http-equiv="X-Content-Type-Options" content="nosniff">
-<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,viewport-fit=cover">
 <meta name="robots" content="index, follow">
 <title>Clean Pools SJ — Mantenimiento Profesional de Piscinas · San Juan</title>
 <meta name="description" content="Mantenimiento, limpieza profunda y recuperación de agua de piscinas en San Juan (Capital, Rawson, Rivadavia, Pocito y zonas aledañas). Más de 150 clientes confían en nosotros. Presupuesto sin cargo por WhatsApp.">
@@ -437,6 +437,35 @@ footer{background:var(--surf);border-top:1px solid var(--border);padding:44px 5v
   .hero-actions{flex-direction:column}
   .btn-wa,.btn-ghost{justify-content:center}
 }
+
+/* OPTIMIZACIÓN MÓVIL (agregado, no modifica estilos existentes) */
+html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
+a,button,.faq-q,.dgal,.gi,.fi-main,.fi-sm{-webkit-tap-highlight-color:transparent;touch-action:manipulation}
+img{max-width:100%}
+@media(max-width:760px){
+  .plans{margin-top:48px}
+  .plan{padding:28px 20px 22px}
+  .btn-plan,.btn-gold{width:100%;min-height:48px}
+  .price-row{font-size:.84rem;padding:10px 0}
+}
+@media(max-width:600px){
+  /* 16px evita el zoom automático de iPhone al tocar un campo */
+  .fi{font-size:16px;min-height:48px}
+  textarea.fi{min-height:110px}
+  .faq-q{padding:18px 16px;min-height:52px}
+  .btn-wa,.btn-ghost{min-height:48px}
+  .chat-widget{right:max(14px,env(safe-area-inset-right));bottom:max(16px,env(safe-area-inset-bottom))}
+  .foot-bottom{flex-direction:column;align-items:flex-start}
+  .fsoc{width:42px;height:42px}
+}
+@media(max-width:380px){
+  .price-row{flex-direction:column;align-items:flex-start;gap:2px}
+  .plan-crown{font-size:.62rem;padding:6px 12px}
+  .section-title{font-size:1.4rem}
+}
+@media(hover:none){
+  .plan:hover{transform:none}
+}
 </style>
 <script type="application/ld+json">
 {
@@ -684,9 +713,9 @@ footer{background:var(--surf);border-top:1px solid var(--border);padding:44px 5v
           </ul>
           <div class="price-box">
             <div class="price-box-title">Piletas de hasta 50.000 L</div>
-            <div class="price-row"><span>1 visita por semana</span><strong>$20.000<small>por visita</small></strong></div>
-            <div class="price-row"><span>2 visitas por mes</span><strong>$25.000<small>por visita</small></strong></div>
             <div class="price-row"><span>1 vez al mes o visita única</span><strong>$30.000<small>por visita</small></strong></div>
+            <div class="price-row"><span>2 visitas por mes</span><strong>$25.000<small>por visita</small></strong></div>
+            <div class="price-row"><span>1 visita por semana (4 visitas al mes)</span><strong>$20.000<small>por visita</small></strong></div>
             <div class="price-more">¿Tu pileta es de más de 50.000 L? Consultanos el caso y te pasamos el valor.</div>
           </div>
           <div class="plan-note">Los productos químicos no están incluidos. Podés pedirlos en nuestra <a href="tienda.html" style="color:var(--sky);font-weight:700">tienda</a>.</div>
