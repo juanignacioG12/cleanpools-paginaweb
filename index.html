@@ -235,6 +235,13 @@ nav.stuck{box-shadow:0 2px 36px rgba(0,0,0,.35)}
 .plan.gold .plan-list li.hl{color:var(--text);font-weight:700}
 .btn-gold{display:inline-flex;align-items:center;justify-content:center;gap:8px;background:linear-gradient(135deg,var(--gold2),var(--gold) 55%,var(--gold3));color:#2B1D00;font-weight:900;font-size:.88rem;padding:14px 22px;border-radius:50px;box-shadow:0 6px 22px rgba(212,175,55,.4);transition:all .25s;position:relative}
 .btn-gold:hover{transform:translateY(-2px);box-shadow:0 10px 30px rgba(212,175,55,.6)}
+.price-box{background:var(--glow);border:1px solid var(--border2);border-radius:var(--r2);padding:14px 14px 10px;margin-bottom:16px}
+.price-box-title{font-size:.7rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin-bottom:8px}
+.price-row{display:flex;justify-content:space-between;align-items:baseline;gap:10px;padding:8px 0;border-top:1px solid var(--border);font-size:.82rem;color:var(--text2)}
+.price-row:first-of-type{border-top:none}
+.price-row strong{font-family:'Playfair Display',serif;font-size:1.05rem;font-weight:800;color:var(--text);white-space:nowrap}
+.price-row small{display:block;font-size:.7rem;color:var(--muted)}
+.price-more{font-size:.74rem;color:var(--muted);margin-top:6px;padding-top:8px;border-top:1px dashed var(--border2);line-height:1.5}
 .plans-foot{text-align:center;font-size:.78rem;color:var(--muted);margin-top:22px}
 @media(max-width:760px){.plans-grid{grid-template-columns:1fr;gap:30px}.plan-tag{min-height:0}}
 
@@ -675,6 +682,13 @@ footer{background:var(--surf);border-top:1px solid var(--border);padding:44px 5v
             <li>Control químico y asesoramiento</li>
             <li>Informe del estado del agua por WhatsApp</li>
           </ul>
+          <div class="price-box">
+            <div class="price-box-title">Piletas de hasta 50.000 L</div>
+            <div class="price-row"><span>1 visita por semana</span><strong>$20.000<small>por visita</small></strong></div>
+            <div class="price-row"><span>2 visitas por mes</span><strong>$25.000<small>por visita</small></strong></div>
+            <div class="price-row"><span>1 vez al mes o visita única</span><strong>$30.000<small>por visita</small></strong></div>
+            <div class="price-more">¿Tu pileta es de más de 50.000 L? Consultanos el caso y te pasamos el valor.</div>
+          </div>
           <div class="plan-note">Los productos químicos no están incluidos. Podés pedirlos en nuestra <a href="tienda.html" style="color:var(--sky);font-weight:700">tienda</a>.</div>
           <a class="btn-plan" href="https://wa.me/5492645494145?text=Hola%2C+quiero+consultar+por+el+Plan+Est%C3%A1ndar" target="_blank" rel="noopener noreferrer">Consultar Plan Estándar →</a>
         </div>
@@ -694,12 +708,19 @@ footer{background:var(--surf);border-top:1px solid var(--border);padding:44px 5v
             <li class="hl">Mayor poder de elección de días: visitas a convenir con vos</li>
             <li>Informe del estado del agua por WhatsApp con fotos</li>
           </ul>
+          <div class="price-box" style="border-color:rgba(212,175,55,.5)">
+            <div class="price-box-title">Plan con limpieza semanal · químicos incluidos</div>
+            <div class="price-row"><span>Piletas hasta 30.000 L</span><strong>$27.000<small>por visita</small></strong></div>
+            <div class="price-row"><span>Piletas hasta 40.000 L</span><strong>$28.000<small>por visita</small></strong></div>
+            <div class="price-row"><span>Piletas hasta 50.000 L</span><strong>$30.000<small>por visita</small></strong></div>
+            <div class="price-more">¿Tu pileta es de más de 50.000 L? Consultanos el caso y te pasamos el valor.</div>
+          </div>
           <div class="plan-note" style="border-color:rgba(212,175,55,.5)">Sin comprar químicos y sin coordinar nada: vos no tenés que preocuparte por nada.</div>
           <a class="btn-gold" href="https://wa.me/5492645494145?text=Hola%2C+quiero+consultar+por+el+Plan+Plus" target="_blank" rel="noopener noreferrer">Consultar Plan Plus →</a>
         </div>
 
       </div>
-      <p class="plans-foot">Presupuesto sin cargo por WhatsApp · Precio según tamaño y estado de la piscina</p>
+      <p class="plans-foot">Presupuesto sin cargo por WhatsApp · Valores de referencia sujetos a tamaño y estado de la piscina</p>
     </div>
   </div>
 </section>
