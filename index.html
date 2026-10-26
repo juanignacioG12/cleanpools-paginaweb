@@ -244,6 +244,37 @@ nav.stuck{box-shadow:0 2px 36px rgba(0,0,0,.35)}
 .price-more{font-size:.74rem;color:var(--muted);margin-top:6px;padding-top:8px;border-top:1px dashed var(--border2);line-height:1.5}
 .plans-foot{text-align:center;font-size:.78rem;color:var(--muted);margin-top:22px}
 @media(max-width:760px){.plans-grid{grid-template-columns:1fr;gap:30px}.plan-tag{min-height:0}}
+/* FLIP · TÉRMINOS Y CONDICIONES PLAN PLUS */
+.plan-flip{perspective:1600px;display:flex;transition:transform .3s}
+.plan-flip:hover{transform:translateY(-4px)}
+.plan-flip-inner{position:relative;flex:1;display:flex;transform-style:preserve-3d;transition:transform .7s cubic-bezier(.4,.2,.2,1)}
+.plan-flip.flipped .plan-flip-inner{transform:rotateY(180deg)}
+.plan-flip .plan{-webkit-backface-visibility:hidden;backface-visibility:hidden}
+.plan-flip .plan-front{flex:1}
+.plan-flip .plan-front:hover{transform:none}
+.plan.plan-back{position:absolute;inset:0;transform:rotateY(180deg);padding:26px 22px 20px;overflow:hidden}
+.plan-flip .plan-back:hover{transform:rotateY(180deg)}
+.tc-head{position:relative;margin-bottom:6px}
+.tc-head .plan-name{font-size:1.3rem}
+.tc-head .plan-tag{min-height:0;margin-bottom:10px}
+.tc-body{position:relative;flex:1;min-height:0;overflow-y:auto;padding-right:8px;margin-bottom:14px;scrollbar-width:thin;scrollbar-color:var(--gold) transparent}
+.tc-body::-webkit-scrollbar{width:5px}
+.tc-body::-webkit-scrollbar-thumb{background:var(--gold);border-radius:5px}
+.tc-item{padding:9px 0;border-top:1px solid var(--border)}
+.tc-item:first-child{border-top:none;padding-top:2px}
+.tc-item h4{font-size:.78rem;font-weight:800;color:var(--text);margin-bottom:3px}
+.tc-item p{font-size:.76rem;color:var(--text2);line-height:1.55}
+.tc-foot{font-size:.72rem;color:var(--muted);border-top:1px dashed var(--border2);padding-top:10px;margin-top:4px;line-height:1.5}
+.tc-actions{position:relative;display:flex;flex-direction:column;gap:9px}
+.tc-actions .btn-gold{font-size:.82rem;padding:12px 18px}
+.btn-tc{display:inline-flex;align-items:center;justify-content:center;gap:6px;width:100%;margin-top:10px;background:transparent;border:1px solid var(--border2);color:var(--text2);font-family:inherit;font-weight:700;font-size:.78rem;padding:10px 16px;border-radius:50px;cursor:pointer;transition:all .22s}
+.btn-tc:hover{border-color:var(--gold);color:var(--text)}
+.btn-tc.back{margin-top:0}
+.plan-front .btn-gold{position:relative}
+.plan-front .btn-tc{position:relative}
+@media(prefers-reduced-motion:reduce){.plan-flip-inner{transition:none}}
+@media(max-width:760px){.plan.plan-back{padding:22px 18px 18px}.plan-flip:hover{transform:none}}
+
 
 /* DEEP */
 .deep-intro{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:start;margin-top:52px}
@@ -722,7 +753,9 @@ img{max-width:100%}
           <a class="btn-plan" href="https://wa.me/5492645494145?text=Hola%2C+quiero+consultar+por+el+Plan+Est%C3%A1ndar" target="_blank" rel="noopener noreferrer">Consultar Plan Estándar →</a>
         </div>
 
-        <div class="plan gold">
+        <div class="plan-flip" id="planPlusFlip">
+          <div class="plan-flip-inner">
+        <div class="plan gold plan-front" id="planPlusFront">
           <span class="plan-crown">★ El más completo</span>
           <div class="plan-name">Plan Plus</div>
           <p class="plan-tag">Gestión integral de tu pileta y tu filtro. Vos disfrutás, nosotros nos ocupamos de todo.</p>
@@ -739,16 +772,40 @@ img{max-width:100%}
           </ul>
           <div class="price-box" style="border-color:rgba(212,175,55,.5)">
             <div class="price-box-title">Plan con limpieza semanal · químicos incluidos</div>
-            <div class="price-row"><span>Piletas hasta 20.000 L</span><strong>$25.000<small>por visita</small></strong></div>
-            <div class="price-row"><span>Piletas hasta 30.000 L</span><strong>$27.000<small>por visita</small></strong></div>
-            <div class="price-row"><span>Piletas hasta 40.000 L</span><strong>$28.000<small>por visita</small></strong></div>
-            <div class="price-row"><span>Piletas hasta 50.000 L</span><strong>$30.000<small>por visita</small></strong></div>
+            <div class="price-row"><span>Piletas hasta 20.000 L</span><strong>$28.000<small>por visita</small></strong></div>
+            <div class="price-row"><span>Piletas hasta 30.000 L</span><strong>$30.000<small>por visita</small></strong></div>
+            <div class="price-row"><span>Piletas hasta 40.000 L</span><strong>$32.000<small>por visita</small></strong></div>
+            <div class="price-row"><span>Piletas hasta 50.000 L</span><strong>$35.000<small>por visita</small></strong></div>
             <div class="price-more">¿Tu pileta es de más de 50.000 L? Consultanos el caso y te pasamos el valor.</div>
           </div>
           <div class="plan-note" style="border-color:rgba(212,175,55,.5)">Sin comprar químicos y sin coordinar nada: vos no tenés que preocuparte por nada.</div>
           <a class="btn-gold" href="https://wa.me/5492645494145?text=Hola%2C+quiero+consultar+por+el+Plan+Plus" target="_blank" rel="noopener noreferrer">Consultar Plan Plus →</a>
+          <button type="button" class="btn-tc" aria-expanded="false" aria-controls="planPlusBack" onclick="flipPlan(this,true)">📄 Términos y condiciones</button>
         </div>
-
+        <div class="plan gold plan-back" id="planPlusBack" inert aria-label="Términos y condiciones del Plan Plus">
+          <div class="tc-head">
+            <div class="plan-name">Términos y condiciones</div>
+            <p class="plan-tag">Plan Plus · químicos incluidos</p>
+          </div>
+          <div class="tc-body" tabindex="0">
+            <div class="tc-item"><h4>1. Qué incluye</h4><p>Visitas con aspirado de fondo, cepillado, limpieza de línea de flotación y skimmer, control químico, retrolavado del filtro y los equipos, e informe del estado del agua por WhatsApp con fotos (opcional).</p></div>
+            <div class="tc-item"><h4>2. Productos químicos</h4><p>Los productos necesarios para mantener el agua equilibrada están incluidos. Clean Pools define la marca, el tipo y la cantidad según el volumen, el estado y la época del año de cada pileta. Al contratar el servicio se acuerdan dos dosis de mantenimiento: una dosis normal, para el uso habitual, y una dosis reforzada, para épocas de calor intenso, lluvias, viento u otras situaciones que exigen más cuidado. Así el agua se mantiene en óptimas condiciones durante toda la temporada.</p></div>
+            <div class="tc-item"><h4>3. Frecuencia y días de visita</h4><p>El plan se arma con limpieza semanal y los días se acuerdan con vos. Si necesitás cambiar un día, avisanos con anticipación y lo reprogramamos.</p></div>
+            <div class="tc-item"><h4>4. Cancelación</h4><p>Podés dar de baja el plan cuando quieras avisándonos con al menos 48 hs de anticipación a la próxima visita. Se abonan las visitas ya realizadas.</p></div>
+            <div class="tc-item"><h4>5. Pagos y precios</h4><p>Los valores publicados son de referencia, por visita, y se confirman en el presupuesto. La forma y la fecha de pago se acuerdan al contratar. Si los precios se actualizan, te avisamos antes de aplicarlos y no afectan las visitas ya realizadas.</p></div>
+            <div class="tc-item"><h4>6. Responsabilidades del cliente</h4><p>Asegurar el acceso libre y seguro a la pileta, al filtro y a la sala de máquinas. Mantener el servicio eléctrico y el agua disponibles. Avisarnos antes de agregar productos por tu cuenta, llenar o vaciar la pileta, o hacer cambios en los equipos.</p></div>
+            <div class="tc-item"><h4>7. Pileta en mal estado al inicio</h4><p>Si el agua está verde, turbia o con algas, lo evaluamos en la primera visita. Puede hacer falta una Recuperación de Agua (2 visitas) o una Limpieza Profunda, que se presupuestan aparte antes de comenzar el plan regular.</p></div>
+            <div class="tc-item"><h4>8. Clima y reprogramación</h4><p>Si hay lluvia, tormenta o viento fuerte (como el Zonda), reprogramamos la visita dentro de la misma semana, sin costo adicional.</p></div>
+            <div class="tc-item"><h4>9. Piletas de más de 50.000 L</h4><p>Los valores publicados llegan hasta 50.000 L. Para piletas más grandes armamos un presupuesto a medida.</p></div>
+            <p class="tc-foot">Estos términos son orientativos y se confirman por WhatsApp al contratar el servicio. Ante cualquier duda, escribinos.</p>
+          </div>
+          <div class="tc-actions">
+            <button type="button" class="btn-tc back" onclick="flipPlan(this,false)">← Volver al plan</button>
+            <a class="btn-gold" href="https://wa.me/5492645494145?text=Hola%2C+le%C3%ADs+los+t%C3%A9rminos+y+quiero+consultar+por+el+Plan+Plus" target="_blank" rel="noopener noreferrer">Consultar Plan Plus →</a>
+          </div>
+        </div>
+          </div>
+        </div>
       </div>
       <p class="plans-foot">Presupuesto sin cargo por WhatsApp · Valores de referencia sujetos a tamaño y estado de la piscina</p>
     </div>
@@ -1070,6 +1127,25 @@ document.querySelectorAll('[onclick^="openLb"]').forEach(el=>{
 });
 document.querySelectorAll('.faq-q').forEach(b=>b.setAttribute('aria-expanded','false'));
 const yr=document.getElementById('yr');if(yr)yr.textContent=new Date().getFullYear();
+</script>
+
+<script>
+function flipPlan(btn,open){
+  var wrap=document.getElementById('planPlusFlip');
+  var front=document.getElementById('planPlusFront');
+  var back=document.getElementById('planPlusBack');
+  if(!wrap||!front||!back)return;
+  // la cara trasera toma el alto de la delantera y scrollea por dentro
+  wrap.classList.toggle('flipped',open);
+  if(open){front.setAttribute('inert','');back.removeAttribute('inert');}
+  else{back.setAttribute('inert','');front.removeAttribute('inert');}
+  var opener=front.querySelector('.btn-tc');
+  if(opener)opener.setAttribute('aria-expanded',open?'true':'false');
+  var body=back.querySelector('.tc-body');
+  if(open&&body)body.scrollTop=0;
+  setTimeout(function(){(open?back.querySelector('.btn-tc.back'):opener).focus({preventScroll:true});},350);
+  wrap.scrollIntoView({behavior:'smooth',block:'nearest'});
+}
 </script>
 </body>
 </html>
